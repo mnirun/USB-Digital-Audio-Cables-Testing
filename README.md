@@ -2,13 +2,18 @@
 
 ## ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio
 
-- อ้างอิง Google https://source.android.com/devices/audio/usb
+- อ้างอิง Google [USB Digital Audio ](https://source.android.com/devices/audio/usb)
+- Cambridge Audio [Our Guide to USB Audio - Why Should I Use it?](https://www.cambridgeaudio.com/usa/en/blog/our-guide-usb-audio-why-should-i-use-it/)
 
 ## USB Audio Class (UAC)
 
 ## USB 1.0, 2.0, 3.0 ...
 
-- ตรวจสอบ USB DAC ด้วย [Thesycon USB Descriptor Dumper](https://www.thesycon.de/eng/usb_descriptordumper.shtml)
+สามารถตรวจสอบความเร็วของ USB DAC ด้วยโปรแกรม [Thesycon USB Descriptor Dumper](https://www.thesycon.de/eng/usb_descriptordumper.shtml) บน Windows OS
+
+จากการตรวจสอบ Shanling UA2 พบว่าใช้ USB 2.0 HighSpeed การเลือกใช้สาย USB 2.0 จึงเพียงพอต่อการใช้งาน การใช้สาย USB 3.0 จึงไม่ได้ทำให้รับ-ส่งข้อมูลเร็วขึ้นแต่อย่างใด
+
+![Shanling UA2](/Pictures/DescriptorDump_Shanling_UA2.png)
 
 ## สาย USB มีผลต่อเสียงที่ได้หรือไม่ ?
 
