@@ -21,8 +21,9 @@
 
 - **Android Phone:** [Realme 5 Pro](https://www.realme.com/th/realme-5-pro) RMX1971EX
 - **USB DAC:** [Shanling UA2](https://en.shanling.com/product/396) USB 2.0, UAC 1.0/2.0
-- **Audio Interface:** [ESI audio U22 XT ](https://www.esi-audio.com/products/u22xt/)
-- **สายสัญญาณ:** สาย 3.5mm to RCA ใช้สาย [Canare L-2B2AT](https://www.canare.co.jp/en/products/cables/index.php?tid=4_003) ความยาว 1 เมตร เข้าหัว [Amphenol RCA](https://www.amphenol.com/node/4900)
+- **Audio Interface:** [ESI audio U22 XT ](https://www.esi-audio.com/products/u22xt/) 24-bit / 96kHz
+- **Analog Cable:** สาย 3.5mm to RCA Stereo ใช้สาย [Canare L-2B2AT](https://www.canare.co.jp/en/products/cables/index.php?tid=4_003) ยาว 1 เมตร เข้าหัว 3.5mm [Amphenol K Series KS3PC](https://www.amphenolaudio.com/products/14-2/k-series/) สำหรับหัว RCA ใข้ [Amphenol M Series ACPR](https://www.amphenolaudio.com/products/rca/m-series/)
+- **USB Cable Tester:** [BitTradeOne USB CABLE CHECKER 2](https://bit-trade-one.co.jp/adusbcim/)
 
 ### โปรแกรมที่ใช้ทดสอบ
 - **Music Player:** [HiBy Music](https://play.google.com/store/apps/details?id=com.hiby.music)
