@@ -39,4 +39,6 @@
 
 ### วิธีการทดสอบ
 
+Android ===> USB Cable ===> NFJ FX-AUDIO- FX-D03J ===> S/PDIF Cable ===> Hifime UR23 ===> PC
+
 ### ผลการทดสอบ
