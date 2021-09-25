@@ -1,11 +1,9 @@
-# USB-Digital-Audio-Cables-Testing (Draft 2021.09.18)
+# USB-Digital-Audio-Cables-Testing (Draft 2021.09.25)
 
 ## ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio
 
 - อ้างอิง Google [USB Digital Audio ](https://source.android.com/devices/audio/usb)
 - Cambridge Audio [Our Guide to USB Audio - Why Should I Use it?](https://www.cambridgeaudio.com/usa/en/blog/our-guide-usb-audio-why-should-i-use-it/)
-
-## USB Audio Class (UAC)
 
 ## USB 1.0, 2.0, 3.0 ...
 
@@ -15,21 +13,22 @@
 
 ![Shanling UA2](/Pictures/DescriptorDump_Shanling_UA2.png)
 
+## USB Audio Class (UAC)
+
 ## สาย USB มีผลต่อเสียงที่ได้หรือไม่ ?
 
 ### อุปกรณ์ที่ใช้ทดสอบ
 
 - **Android Phone:** [Realme 5 Pro](https://www.realme.com/th/realme-5-pro) RMX1971EX
-- **USB DAC:** [Shanling UA2](https://en.shanling.com/product/396) USB 2.0, UAC 1.0/2.0
-- **Audio Interface:** [ESI audio U22 XT ](https://www.esi-audio.com/products/u22xt/) 24-bit / 96kHz
-- **Analog Cable:** สาย 3.5mm to RCA Stereo ใช้สาย [Canare L-2B2AT](https://www.canare.co.jp/en/products/cables/index.php?tid=4_003) ยาว 1 เมตร เข้าหัว 3.5mm [Amphenol K Series KS3PC](https://www.amphenolaudio.com/products/14-2/k-series/) สำหรับหัว RCA ใข้ [Amphenol M Series ACPR](https://www.amphenolaudio.com/products/rca/m-series/)
+- **USB to S/PDIF Digital to Digital Converter:** [North Flat Japan FX-AUDIO- FX-D03J](http://www.nfjapan.com/新製品のご案内/usbバスパワー駆動ハイレゾ対応ddc-fx-audio-『fx-d03j』を発売/) UAC 1.0 24bit/96kHz
+- **S/PDIF to USB Digital to Digital Converter:** [Hifime UR23 SPDIF Optical to USB Cconverter](https://hifimediy.com/product/hifime-ur23-spdif-optical-to-usb-converter/) UAC 1.0 24bit/96kHz
 - **USB Cable Tester:** [BitTradeOne USB CABLE CHECKER 2](https://bit-trade-one.co.jp/adusbcim/)
 
 ### โปรแกรมที่ใช้ทดสอบ
 - **Music Player:** [HiBy Music](https://play.google.com/store/apps/details?id=com.hiby.music)
 - **Digital Audio Workstation:** [Bitwig Studio 8-Track](https://www.bitwig.com/8-track/)
+- **Digital Audio Workstation:** [Audacity](https://www.audacityteam.org/)
 - **Spectrogram Analysis:** [SoX - Sound eXchange](http://sox.sourceforge.net/)
-- **Acoustics Fingerprint:** [Chromaprint](https://acoustid.org/chromaprint)
 
 ### สาย USB ที่ใช้ทดสอบ
 - [ddHifi TC05 1st Gen.](https://www.ddhifi.com/productinfo/469679.html) สายยาว 10 เซนติเมตร
