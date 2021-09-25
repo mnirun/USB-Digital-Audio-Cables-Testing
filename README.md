@@ -4,6 +4,7 @@
 
 - อ้างอิง Google [USB Digital Audio ](https://source.android.com/devices/audio/usb)
 - Cambridge Audio [Our Guide to USB Audio - Why Should I Use it?](https://www.cambridgeaudio.com/usa/en/blog/our-guide-usb-audio-why-should-i-use-it/)
+- EDN [Fundamentals of USB Audio](https://www.edn.com/fundamentals-of-usb-audio/)
 
 ## USB 1.0, 2.0, 3.0 ...
 
