@@ -27,9 +27,6 @@
 - **USB Cable Tester:** [BitTradeOne USB CABLE CHECKER 2](https://bit-trade-one.co.jp/adusbcim/)
 
 ### โปรแกรมที่ใช้ทดสอบ
-- **Music Player:** [HiBy Music](https://play.google.com/store/apps/details?id=com.hiby.music)
-- **Digital Audio Workstation:** [Bitwig Studio 8-Track](https://www.bitwig.com/8-track/)
-- **Digital Audio Workstation:** [Audacity](https://www.audacityteam.org/)
 - **Spectrogram Analysis:** [SoX - Sound eXchange](http://sox.sourceforge.net/)
 
 ### สาย USB ที่ใช้ทดสอบ
@@ -40,6 +37,10 @@
 
 ### วิธีการทดสอบ
 
-Android ===> USB Cable ===> NFJ FX-AUDIO- FX-D03J ===> S/PDIF Cable ===> Hifime UR23 ===> PC
+PC ==> USB Cable ==> SIGNSTEK Q5 USB DDC/DAC ==> TOSLINK Cable ==> USB 7.1 Sound Card ==> USB Cable ==> PC
+
+![Test Rig 1](/Pictures/IMG20211013144032.jpg)
+
+![Test Rig 2](/Pictures/IMG20211013144532.jpg)
 
 ### ผลการทดสอบ
