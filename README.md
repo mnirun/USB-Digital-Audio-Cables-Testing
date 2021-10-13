@@ -29,12 +29,6 @@
 - **USB C Female to B Male Adapter:** UGREEN 20120
 - **TOSLINK Cable:** [UGREEN 70890](https://www.ugreen.com/products/fiber-optical-audio-cable) สายยาว 100 เซนติเมตร
 
-### โปรแกรมที่ใช้ทดสอบ
-- [FFmpeg v4.4](https://www.ffmpeg.org/)
-- [fmedia v1.24](https://stsaz.github.io/fmedia/)
-- [Pratt v6.1.53](https://www.fon.hum.uva.nl/praat/)
-- [SoX v14.4.2](http://sox.sourceforge.net/)
-
 ### สาย USB ที่ใช้ทดสอบ
 - [AENZR FPC AZ1301, USB C Male to C Male, USB 3.1 Gen 2](http://www.aenzr.com/pd.jsp?id=31) สายยาว 13 เซนติเมตร
 - [ANKER PowerLine II A8485, USB C Male to C Male, USB 3.1 Gen 2](https://www.anker.com/es/products/A8485011) ได้รับมาตรฐาน [USB-IF Certified](https://www.usb.org/single-product/3563) สายยาว 90 เซนติเมตร
@@ -43,9 +37,16 @@
 - [NEO (created by OYAIDE Elec.) d+ USB class B, USB A Male to B Male , USB 2.0](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/) สายยาว 100 เซนติเมตร
 - [OE Audio OTG Digital Cable, USB C Male to C Male, USB 2.0](https://www.oeaudio.net/oeotg) สายยาว 12 เซนติเมตร
 - [RØDE SC17, USB C Male to C Male, USB 2.0](https://www.rode.com/accessories/cables/sc17) ได้รับมาตรฐาน [USB-IF Certified](https://www.usb.org/single-product/3751) สายยาว 150 เซนติเมตร
-- [Shanling UA2 สายแถม, USB C Male to C Male, USB 2.0](https://en.shanling.com/product/396) สายยาว 12=0 เซนติเมตร
+- [Shanling UA2 สายแถม, USB C Male to C Male, USB 2.0](https://en.shanling.com/product/396) สายยาว 120 เซนติเมตร
 - [UGREEN 10350, USB A Male to B Male USB 2.0](https://www.ugreen.com/products/usb-2-0-printer-scanner-cable) สายยาว 150 เซนติเมตร
 - [UGREEN 50996, USB C Male to C Male, USB 2.0](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153) สายยาว 50 เซนติเมตร
+
+### โปรแกรมที่ใช้ทดสอบ
+- [FFmpeg v4.4](https://www.ffmpeg.org/)
+- [fmedia v1.24](https://stsaz.github.io/fmedia/)
+- [Pratt v6.1.53](https://www.fon.hum.uva.nl/praat/)
+- [SoX v14.4.2](http://sox.sourceforge.net/)
+- [DeltaWave v2.0.1](https://deltaw.org/)
 
 ### เพลงที่ใช้ทดสอบ
 - [Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference)
@@ -58,7 +59,7 @@ PC ==> USB Cable ==> SIGNSTEK Q5 USB DDC/DAC ==> TOSLINK Cable ==> USB 7.1 Sound
 
 ![Test Rig 2](/pictures/IMG20211013144532.jpg)
 
-### ผลการทดสอบ
+### สรุปผลการทดสอบ
 |สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter โดยรวม (ns)
 |---|---|---|
 |AENZR FPC AZ1301|[223.008](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|432.7|
