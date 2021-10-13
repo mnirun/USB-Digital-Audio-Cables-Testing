@@ -59,7 +59,7 @@ PC ==> USB Cable ==> SIGNSTEK Q5 USB DDC/DAC ==> TOSLINK Cable ==> USB 7.1 Sound
 ![Test Rig 2](/pictures/IMG20211013144532.jpg)
 
 ### ผลการทดสอบ
-|สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter (ns)
+|สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter โดยรวม (ns)
 |---|---|---|
 |AENZR FPC AZ1301|[223.008](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|432.7|
 |ANKER PowerLine II A8485|[223.008](result_silence/ANKER_A8485_C-C_USB31_90cm_inverted.txt)|418.0|
@@ -69,6 +69,6 @@ PC ==> USB Cable ==> SIGNSTEK Q5 USB DDC/DAC ==> TOSLINK Cable ==> USB 7.1 Sound
 |OE Audio OTG Digital Cable|[223.008](result_silence/OEAudio_OTG_C-C_USB20_12cm_inverted.txt)|139.4|
 |RØDE SC17|[223.008](result_silence/RODE_SC17_C-C_USB20_100cm_inverted.txt)|93.1|
 |Shanling UA2 สายแถม|[223.008](result_silence/Shanling_UA2_C-C_USB2.0_10cm_inverted.txt)|112.5|
-|UGREEN 10350|[223.008](result_silence/UGREEN_US286_C-C_USB20_50cm_inverted.txt)|428.2|
-|UGREEN 50996|223.008|418.7|
+|UGREEN 10350|[223.008](result_silence/UGREEN_10350_A-B_USB20_150cm_inverted.txt)|428.2|
+|UGREEN 50996|[223.008](result_silence/UGREEN_50996_C-C_USB20_50cm_inverted.txt)|418.7|
 
