@@ -43,7 +43,7 @@
 - [NEO (created by OYAIDE Elec.) d+ USB class B, USB A Male to B Male , USB 2.0](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/) สายยาว 100 เซนติเมตร
 - [OE Audio OTG Digital Cable, USB C Male to C Male, USB 2.0](https://www.oeaudio.net/oeotg) สายยาว 12 เซนติเมตร
 - [RØDE SC17, USB C Male to C Male, USB 2.0](https://www.rode.com/accessories/cables/sc17) ได้รับมาตรฐาน [USB-IF Certified](https://www.usb.org/single-product/3751) สายยาว 150 เซนติเมตร
-- [Shanling UA2, USB C Male to C Male, USB 2.0 สายแถม](https://en.shanling.com/product/396) สายยาว 12=0 เซนติเมตร
+- [Shanling UA2 สายแถม, USB C Male to C Male, USB 2.0](https://en.shanling.com/product/396) สายยาว 12=0 เซนติเมตร
 - [UGREEN 10350, USB A Male to B Male USB 2.0](https://www.ugreen.com/products/usb-2-0-printer-scanner-cable) สายยาว 150 เซนติเมตร
 - [UGREEN 50996, USB C Male to C Male, USB 2.0](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153) สายยาว 50 เซนติเมตร
 
@@ -59,3 +59,16 @@ PC ==> USB Cable ==> SIGNSTEK Q5 USB DDC/DAC ==> TOSLINK Cable ==> USB 7.1 Sound
 ![Test Rig 2](/pictures/IMG20211013144532.jpg)
 
 ### ผลการทดสอบ
+|สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter (ns)
+|---|---|---|
+|AENZR FPC AZ1301|[223.008](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|432.7|
+|ANKER PowerLine II A8485|[223.008](result_silence/ANKER_A8485_C-C_USB31_90cm_inverted.txt)|418.0|
+|ddHifi TC05 1st Gen.|[223.008](result_silence/ddHifi_TC05_C-C_USB20_15cm_inverted.txt)|122.5|
+|FiiO LT-TC1|[223.008](result_silence/FiiO_LT-TC01_C-C_USB20_15cm_inverted.txt)|419.8|
+|NEO (created by OYAIDE Elec.) d+ USB class B|[223.008](result_silence/NEO_d%2B_A-B_USB20_100cm_inverted.txt)|125.3|
+|OE Audio OTG Digital Cable|[223.008](result_silence/OEAudio_OTG_C-C_USB20_12cm_inverted.txt)|139.4|
+|RØDE SC17|[223.008](result_silence/RODE_SC17_C-C_USB20_100cm_inverted.txt)|93.1|
+|Shanling UA2 สายแถม|[223.008](result_silence/Shanling_UA2_C-C_USB2.0_10cm_inverted.txt)|112.5|
+|UGREEN 10350|[223.008](result_silence/UGREEN_US286_C-C_USB20_50cm_inverted.txt)|428.2|
+|UGREEN 50996|223.008|418.7|
+
