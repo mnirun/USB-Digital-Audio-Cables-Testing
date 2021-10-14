@@ -1,4 +1,4 @@
-# USB-Digital-Audio-Cables-Testing (Draft 2021.10.13)
+# USB-Digital-Audio-Cables-Testing (Draft 2021.10.14)
 
 ## ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio
 
@@ -60,16 +60,16 @@ PC ==> USB Cable ==> SIGNSTEK Q5 USB DDC/DAC ==> TOSLINK Cable ==> USB 7.1 Sound
 ![Test Rig 2](/pictures/IMG20211013144532.jpg)
 
 ### สรุปผลการทดสอบ
-|สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter โดยรวม (ns)
-|---|---|---|
-|AENZR FPC AZ1301|[223.008](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|432.7|
-|ANKER PowerLine II A8485|[223.008](result_silence/ANKER_A8485_C-C_USB31_90cm_inverted.txt)|418.0|
-|ddHifi TC05 1st Gen.|[223.008](result_silence/ddHifi_TC05_C-C_USB20_15cm_inverted.txt)|122.5|
-|FiiO LT-TC1|[223.008](result_silence/FiiO_LT-TC01_C-C_USB20_15cm_inverted.txt)|419.8|
-|NEO (created by OYAIDE Elec.) d+ USB class B|[223.008](result_silence/NEO_d%2B_A-B_USB20_100cm_inverted.txt)|125.3|
-|OE Audio OTG Digital Cable|[223.008](result_silence/OEAudio_OTG_C-C_USB20_12cm_inverted.txt)|139.4|
-|RØDE SC17|[223.008](result_silence/RODE_SC17_C-C_USB20_100cm_inverted.txt)|93.1|
-|Shanling UA2 สายแถม|[223.008](result_silence/Shanling_UA2_C-C_USB2.0_10cm_inverted.txt)|112.5|
-|UGREEN 10350|[223.008](result_silence/UGREEN_10350_A-B_USB20_150cm_inverted.txt)|428.2|
-|UGREEN 50996|[223.008](result_silence/UGREEN_50996_C-C_USB20_50cm_inverted.txt)|418.7|
+|สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter โดยรวม (ns)|SHA-256|
+|---|---|---|---|
+|AENZR FPC AZ1301|[223.008](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|432.7|e10204f86cb05ad9bf2145f3200897dcb3b0f0edc705b14b87dfbcef79237ad0|
+|ANKER PowerLine II A8485|[223.008](result_silence/ANKER_A8485_C-C_USB31_90cm_inverted.txt)|418.0|e939b39e27f3871e3494b552c344e9f1f13cff2489127661fbf67e4d4d30a338|
+|ddHifi TC05 1st Gen.|[223.008](result_silence/ddHifi_TC05_C-C_USB20_15cm_inverted.txt)|122.5|d9aad10648215f901d59beb7e58bf74ae21df29c0b797f05ed4000e7871d7711|
+|FiiO LT-TC1|[223.008](result_silence/FiiO_LT-TC01_C-C_USB20_15cm_inverted.txt)|419.8|d122730b1b7f4ce83c62985a0e78a75641911f6166c388fe348eb00838dad29f|
+|NEO (created by OYAIDE Elec.) d+ USB class B|[223.008](result_silence/NEO_d%2B_A-B_USB20_100cm_inverted.txt)|125.3|8dcf89573ed31434ccf285283a654e2d7098ff2a7dc5f6273382ed52b8a9cf01|
+|OE Audio OTG Digital Cable|[223.008](result_silence/OEAudio_OTG_C-C_USB20_12cm_inverted.txt)|139.4|f1fa4650bcb8ab1da859c99e4d541879beaea290d0cc02e566413913895e74da|
+|RØDE SC17|[223.008](result_silence/RODE_SC17_C-C_USB20_100cm_inverted.txt)|93.1|5a848b25e91a7d24e370860f63be00e5c1bf9499f45c9051348b1d0a5e10a840|
+|Shanling UA2 สายแถม|[223.008](result_silence/Shanling_UA2_C-C_USB2.0_10cm_inverted.txt)|112.5|1985a63f3e6419f82b340ef0dec6943303856b9009ecba71ab3fd519c3697fcd|
+|UGREEN 10350|[223.008](result_silence/UGREEN_10350_A-B_USB20_150cm_inverted.txt)|428.2|cfecba578ee11f52e26e2c56212f1f4c42b86823edcc2e6844ec18b21b2b6235|
+|UGREEN 50996|[223.008](result_silence/UGREEN_50996_C-C_USB20_50cm_inverted.txt)|418.7|25e899a6259dfd4c2fa2d5e78c10548e81b849338d6eab62b858df0f8f838cf6|
 
