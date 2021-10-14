@@ -1,0 +1,67 @@
+Table 1. Results Summary
+Result
+Performing raw processing only -- all matching turned off
+DeltaWave v2.0.1, 2021-10-13T13:35:56.1962644+07:00
+Reference: master_pad.wav[?] 9834653 samples 44100Hz 16bits, stereo, MD5=00
+Comparison: Shanling_UA2_C-C_USB2.0_10cm.wav[?] 9834653 samples 44100Hz 16bits, stereo, MD5=00
+Settings:
+Gain:True, Remove DC:True
+Non-linear Gain EQ:False Non-linear Phase EQ: False
+EQ FFT Size:65536, EQ Frequency Cut: 0Hz - 0Hz, EQ Threshold: -500dB
+Correct Non-linearity: False
+Correct Drift:True, Precision:30, Subsample Align:True
+Non-Linear drift Correction:False
+Upsample:False, Window:Kaiser
+Spectrum Window:Kaiser, Spectrum Size:32768
+Spectrogram Window:Hann, Spectrogram Size:4096, Spectrogram Steps:2048
+Filter Type:FIR, window:Kaiser, taps:262144, minimum phase=False
+Dither:False
+Trim Silence:False
+Enable Simple Waveform Measurement: True
+Discarding Reference: Start=0s, End=0s
+Discarding Comparison: Start=0s, End=0s
+Initial peak values Reference: -0.691dB Comparison: -0.69dB
+Initial RMS values Reference: -15.416dB Comparison: -15.416dB
+Null Depth=59.373dB
+Trimmed 0 samples ( 0.00ms) front, 0 samples ( 0.00ms end)
+Gain matching disabled.
+Phase offset=0ms (0 samples)
+Difference (rms) = -96.68dB [-99.08dBA]
+Correlated Null Depth=59.37dB [103.2dBA]
+Clock drift: 0 ppm
+Files are NOT a bit-perfect match (match=76.98%) at 16 bits
+Files match @ 76.9811% when reduced to 16 bits
+---- Phase difference (full bandwidth): 0.0323640432091369°
+0-10kHz: 0.04°
+0-20kHz: 0.03°
+0-24kHz: 0.03°
+Timing error (rms jitter): 112.5ns
+PK Metric (step=400ms, overlap=50%):
+RMS=-106.2dBFS
+Median=-107.3
+Max=-94.7
+99%: -96.15
+75%: -106.76
+50%: -107.35
+25%: -107.91
+1%: -109.45
+gn=1, dc=0, dr=0, of=0
+---Measurements (for a simple sine-wave only)---
+Comparison DR = 100.29dB
+RMS of the difference of spectra: -132.467807213998dB
+DF Metric (step=400ms, overlap=0%):
+Median=-83.7dB
+Max=-0.4dB Min=-89.4dB
+1% > -88.73dB
+10% > -87.32dB
+25% > -86.05dB
+50% > -83.71dB
+75% > -80.75dB
+90% > -74.67dB
+99% > -5.55dB
+Linearity 26.7bits @ 0.5dB error
+Comparison THD+N = -15.51dB
+Comparison THD = 1.2dB
+H1 (625Hz) = -57.1dB
+DONE!
+Signature: 5cb076fe8438a8a84744c067b572c029
