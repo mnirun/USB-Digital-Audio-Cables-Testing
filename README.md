@@ -60,16 +60,16 @@ PC ==> USB Cable ==> SIGNSTEK Q5 USB DDC/DAC ==> TOSLINK Cable ==> USB 7.1 Sound
 ![Test Rig 2](/pictures/IMG20211013144532.jpg)
 
 ### สรุปผลการทดสอบ
-|สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter โดยรวม (ns)|SHA-256|
+|สาย USB|ระยะเวลาของความเงียบ (วินาที)|Jitter โดยรวม (ns)|MD5|
 |---|---|---|---|
-|AENZR FPC AZ1301|[223.008](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|432.7|e10204f86cb05ad9bf2145f3200897dcb3b0f0edc705b14b87dfbcef79237ad0|
-|ANKER PowerLine II A8485|[223.008](result_silence/ANKER_A8485_C-C_USB31_90cm_inverted.txt)|418.0|e939b39e27f3871e3494b552c344e9f1f13cff2489127661fbf67e4d4d30a338|
-|ddHifi TC05 1st Gen.|[223.008](result_silence/ddHifi_TC05_C-C_USB20_15cm_inverted.txt)|122.5|d9aad10648215f901d59beb7e58bf74ae21df29c0b797f05ed4000e7871d7711|
-|FiiO LT-TC1|[223.008](result_silence/FiiO_LT-TC01_C-C_USB20_15cm_inverted.txt)|419.8|d122730b1b7f4ce83c62985a0e78a75641911f6166c388fe348eb00838dad29f|
-|NEO (created by OYAIDE Elec.) d+ USB class B|[223.008](result_silence/NEO_d%2B_A-B_USB20_100cm_inverted.txt)|125.3|8dcf89573ed31434ccf285283a654e2d7098ff2a7dc5f6273382ed52b8a9cf01|
-|OE Audio OTG Digital Cable|[223.008](result_silence/OEAudio_OTG_C-C_USB20_12cm_inverted.txt)|139.4|f1fa4650bcb8ab1da859c99e4d541879beaea290d0cc02e566413913895e74da|
-|RØDE SC17|[223.008](result_silence/RODE_SC17_C-C_USB20_100cm_inverted.txt)|93.1|5a848b25e91a7d24e370860f63be00e5c1bf9499f45c9051348b1d0a5e10a840|
-|Shanling UA2 สายแถม|[223.008](result_silence/Shanling_UA2_C-C_USB2.0_10cm_inverted.txt)|112.5|1985a63f3e6419f82b340ef0dec6943303856b9009ecba71ab3fd519c3697fcd|
-|UGREEN 10350|[223.008](result_silence/UGREEN_10350_A-B_USB20_150cm_inverted.txt)|428.2|cfecba578ee11f52e26e2c56212f1f4c42b86823edcc2e6844ec18b21b2b6235|
-|UGREEN 50996|[223.008](result_silence/UGREEN_50996_C-C_USB20_50cm_inverted.txt)|418.7|25e899a6259dfd4c2fa2d5e78c10548e81b849338d6eab62b858df0f8f838cf6|
+|AENZR FPC AZ1301|[223.008](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|[432.7](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[7fab2ebdeccb9ae827c81c1f9800dc96](result_hash/AENZR_AZ1301_C-C_USB31_13cm_md5.txt)|
+|ANKER PowerLine II A8485|[223.008](result_silence/ANKER_A8485_C-C_USB31_90cm_inverted.txt)|[418.0](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[8518be5c40b379a742ba6fc89b2a1b79](result_hash/ANKER_A8485_C-C_USB31_90cm_md5.txt)|
+|ddHifi TC05 1st Gen.|[223.008](result_silence/ddHifi_TC05_C-C_USB20_15cm_inverted.txt)|[122.5](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[b2477e14b1346b8047557ea8f1d44667](result_hash/ddHifi_TC05_C-C_USB20_15cm_md5.txt)|
+|FiiO LT-TC1|[223.008](result_silence/FiiO_LT-TC01_C-C_USB20_15cm_inverted.txt)|[419.8](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[2c05c87e61c3098de449feb572ccd3c1](result_hash/FiiO_LT-TC01_C-C_USB20_15cm_md5.txt)|
+|NEO (created by OYAIDE Elec.) d+ USB class B|[223.008](result_silence/NEO_d%2B_A-B_USB20_100cm_inverted.txt)|[125.3](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[335d6bb16317b9a138b84e0a05236805](result_hash/NEO_d%2B_A-B_USB20_100cm_md5.txt)|
+|OE Audio OTG Digital Cable|[223.008](result_silence/OEAudio_OTG_C-C_USB20_12cm_inverted.txt)|[139.4](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[21a068cbf195af7675e3402014d0eea5](result_hash/OEAudio_OTG_C-C_USB20_12cm_md5.txt)|
+|RØDE SC17|[223.008](result_silence/RODE_SC17_C-C_USB20_100cm_inverted.txt)|[93.1](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[e1cdbacce725d0f243c06d8d625a536e](result_hash/RODE_SC17_C-C_USB20_100cm_md5.txt)|
+|Shanling UA2 สายแถม|[223.008](result_silence/Shanling_UA2_C-C_USB2.0_10cm_inverted.txt)|[112.5](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[f983a4c50eea9783c4b444613750d9aa](result_hash/Shanling_UA2_C-C_USB2.0_10cm_md5.txt)|
+|UGREEN 10350|[223.008](result_silence/UGREEN_10350_A-B_USB20_150cm_inverted.txt)|[428.2](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[271635b90d162dea0cc39324a3dc7b58](result_hash/UGREEN_10350_A-B_USB20_150cm_md5.txt)|
+|UGREEN 50996|[223.008](result_silence/UGREEN_50996_C-C_USB20_50cm_inverted.txt)|[418.7](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[0a0e8d1f2610a1e1e67a3d2142e007b4](result_hash/UGREEN_50996_C-C_USB20_50cm_md5.txt)|
 
