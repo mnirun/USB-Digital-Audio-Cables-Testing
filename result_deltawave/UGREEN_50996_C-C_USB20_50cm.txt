@@ -1,0 +1,65 @@
+Table 1. Results Summary
+Result
+Performing raw processing only -- all matching turned off
+DeltaWave v2.0.1, 2021-10-16T17:13:18.1221582+07:00
+Reference: master_16_24_pad.wav[?] 10704384 samples 48000Hz 16bits, stereo, MD5=00
+Comparison: UGREEN_50996_C-C_USB20_50cm.wav[?] 10704384 samples 48000Hz 16bits, stereo, MD5=00
+Settings:
+Gain:True, Remove DC:True
+Non-linear Gain EQ:False Non-linear Phase EQ: False
+EQ FFT Size:65536, EQ Frequency Cut: 0Hz - 0Hz, EQ Threshold: -500dB
+Correct Non-linearity: False
+Correct Drift:True, Precision:30, Subsample Align:True
+Non-Linear drift Correction:False
+Upsample:False, Window:Kaiser
+Spectrum Window:Kaiser, Spectrum Size:32768
+Spectrogram Window:Hann, Spectrogram Size:4096, Spectrogram Steps:2048
+Filter Type:FIR, window:Kaiser, taps:262144, minimum phase=False
+Dither:False
+Trim Silence:False
+Enable Simple Waveform Measurement: True
+Discarding Reference: Start=0s, End=0s
+Discarding Comparison: Start=0s, End=0s
+Initial peak values Reference: -0.689dB Comparison: -0.689dB
+Initial RMS values Reference: -15.416dB Comparison: -15.416dB
+Null Depth=300dB
+Trimmed 0 samples ( 0.00ms) front, 0 samples ( 0.00ms end)
+Gain matching disabled.
+Phase offset=0ms (0 samples)
+Difference (rms) = -400dB [-400dBA]
+Correlated Null Depth=300dB [300dBA]
+Clock drift: 0 ppm
+Files are a bit-perfect match at 16 bits
+---- Phase difference (full bandwidth): 0°
+0-10kHz: 0.00°
+0-20kHz: 0.00°
+0-24kHz: 0.00°
+Timing error (rms jitter): 0sec
+PK Metric (step=400ms, overlap=50%):
+RMS=-∞dBFS
+Median=-∞
+Max=-∞
+99%: -∞
+75%: -∞
+50%: -∞
+25%: -∞
+1%: -∞
+gn=1, dc=0, dr=0, of=0
+---Measurements (for a simple sine-wave only)---
+Comparison DR = 0dB
+RMS of the difference of spectra: NaNdB
+DF Metric (step=400ms, overlap=0%):
+Median=-300dB
+Max=-154.8dB Min=-300dB
+1% > -300.0dB
+10% > -300.0dB
+25% > -300.0dB
+50% > -300.0dB
+75% > -300.0dB
+90% > -159.55dB
+99% > -154.77dB
+Linearity 32.0bits @ 0.5dB error
+Comparison THD+N = 0dB
+Comparison THD = 0dB
+DONE!
+Signature: 1229ca0d2152852418c83d381545eb91
