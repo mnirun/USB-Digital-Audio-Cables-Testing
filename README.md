@@ -116,17 +116,17 @@ sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
 
 ### สรุปผลการทดสอบ
 
-|ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|MD5|
+|ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|Spectrogram กลับเฟส|
 |---|---|---|
-|[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/AENZR_AZ1301_C-C_USB31_13cm_md5.txt)|
-|[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/ANKER_A8485_C-C_USB31_90cm_md5.txt)|
-|[ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/ddHifi_TC05_C-C_USB20_15cm_md5.txt)|
-|[FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/FiiO_LT-TC01_C-C_USB20_15cm_md5.txt)|
-|[NEO (created by OYAIDE Elec.) d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/NEO_d%2B_A-B_USB20_100cm_md5.txt)|
-|[OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/OEAudio_OTG_C-C_USB20_12cm_md5.txt)|
-|[RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/RODE_SC17_C-C_USB20_100cm_md5.txt)|
-|[Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/Shanling_UA2_C-C_USB2.0_10cm_md5.txt)|
-|[UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/UGREEN_10350_A-B_USB20_150cm_md5.txt)|
-|[UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/UGREEN_50996_C-C_USB20_50cm_md5.txt)|
+|[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
+|[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
+|[ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[Spectrogram](visual_spectrogram/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
+|[FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
+|[NEO (created by OYAIDE Elec.) d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
+|[OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[Spectrogram](visual_spectrogram/OEAudio_OTG_C-C_USB20_12cm_inverted.png)|
+|[RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[Spectrogram](visual_spectrogram/RODE_SC17_C-C_USB20_100cm_inverted.png)|
+|[Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[Spectrogram](visual_spectrogram/Shanling_UA2_C-C_USB2.0_10cm_inverted.png)|
+|[UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
+|[UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
 
 ## พูดคุยกันหน่อย
