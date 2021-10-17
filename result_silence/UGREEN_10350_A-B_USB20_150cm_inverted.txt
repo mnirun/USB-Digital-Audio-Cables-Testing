@@ -11,7 +11,7 @@ Output #0, null, to 'pipe:':
   Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
     Metadata:
       encoder         : Lavc58.134.100 pcm_s16le
-size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    [silencedetect @ 000002089045b540] silence_start: 0
-size=N/A time=00:02:13.78 bitrate=N/A speed= 268x    size=N/A time=00:03:42.99 bitrate=N/A speed= 271x    
+size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    [silencedetect @ 000001fea2beabc0] silence_start: 0
+size=N/A time=00:02:16.36 bitrate=N/A speed= 273x    size=N/A time=00:03:42.99 bitrate=N/A speed= 276x    
 video:0kB audio:41814kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
-[silencedetect @ 000002089045b540] silence_end: 223.008 | silence_duration: 223.008
+[silencedetect @ 000001fea2beabc0] silence_end: 223.008 | silence_duration: 223.008
