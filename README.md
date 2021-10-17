@@ -1,4 +1,4 @@
-# USB-Digital-Audio-Cables-Testing (Draft 2021.10.16)
+# USB-Digital-Audio-Cables-Testing (Draft 2021.10.17)
 
 ## ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio
 
@@ -48,7 +48,7 @@
 - [DeltaWave v2.0.1](https://deltaw.org/)
 
 ### เพลงที่ใช้ทดสอบ
-- [Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference)
+- [Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference) โดยใช้ไฟล์จาก https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav
 
 ### วิธีการทดสอบ
 
@@ -57,7 +57,7 @@ PC ==> **USB Cable** ==> SIGNSTEK Q5 ==> UGREEN TOSLINK Cable ==> Hifime UR23 ==
 ![Test Rig 1](pictures/IMG20211016153917_1600.jpg)
 
 ### สรุปผลการทดสอบ
-|ไฟล์เสียงจากสาย USB|เปรียบเทียบ Bit Perfect กับต้นฉบับ|MD5|
+|ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|MD5|
 |---|---|---|
 |[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/AENZR_AZ1301_C-C_USB31_13cm_md5.txt)|
 |[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/ANKER_A8485_C-C_USB31_90cm_md5.txt)|
