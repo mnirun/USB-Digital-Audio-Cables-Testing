@@ -1,5 +1,7 @@
 # USB-Digital-Audio-Cables-Testing (Draft 2021.10.17)
 
+1. [ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio](##user-content-ความรู้เบื้องต้นเกี่ยวกับ-USB-Digital-Audio)
+
 ## ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio
 
 - อ้างอิง Google [USB Digital Audio ](https://source.android.com/devices/audio/usb)
@@ -52,21 +54,71 @@
 
 ### วิธีการทดสอบ
 
-PC ==> **USB Cable** ==> SIGNSTEK Q5 ==> UGREEN TOSLINK Cable ==> Hifime UR23 ==> PC
+Notebook ==> **USB Cable** ==> SIGNSTEK Q5 ==> UGREEN TOSLINK Cable ==> Hifime UR23 ==> Notebook
 
 ![Test Rig 1](pictures/IMG20211016153917_1600.jpg)
 
+### การเตรียมสภาพแวดล้อมเพื่อการทดลอง (Test Environment Setup)
+
+- เครื่อง Notebook ใช้ไฟจากแบตเตอรี่ ไม่เสียบสายไฟ เพื่อป้องกันปัญหา ground loop
+- เปิด Airplane mode เพื่อป้องกันไม่ให้ Windows Update ทำงานเบื้องหลังซึ่งอาจกระทบการอ่าน-เขียนไฟล์ได้
+- ปิดเสียงของ Windows โดยปรับให้เสียงอยู่ที่ 0 เนื่องตชจากโดยปกติสัญญาณเสียงที่ออกมาจาก USB DDC ทางช่อง Optical Out จะไม่ขึ้นอยู้กับระดับเสียงของ Windows แต่กับ USB DDC บางตัวเมื่อปรับเสียงให้ดังขึ้น ตัวเครื่องเองก็ปรับระดับสัญญาณของ Optical Out ให้สูงขึ้นด้วย ทำให้เสียงที่ได้ไม่เหมือนกับต้นฉบับและอาจเกิดการ clip ของเสียงได้
+- ปรับ bit depth และ sample rate ให้ตรงกันทั้งระบบ ตั้งแต่ไฟล์ต้นฉบับ, USB DDC และ S/PDIF to USB หากไฟล์ต้นฉบับที่ใช้ในการทดสอบมี  bit depth หรือ sample rate ที่สูงกว่าระบบที่ใช้ทดสอบ ให้ทำการแปลงไฟล์ก่อนทำการทดสอบ
+- เพิ่มเสียงว่าง ๆ (silence pad) เข้าไปที่ไฟล์ต้นฉบับ ทางด้านหัวและท้ายด้านละ 2 วินาที เนื่องจากเมื่อกดเล่นเพลงเสียงในช่วงเริ่มต้นอาจจะกระตุกจากการที่โปรแกรมเล่นเพลงกำลังทำการ buffer ไฟล์ ซึ่งจะทำให้ผลการทดลองคลาดเคลื่อน
+
+#### การปรับตั้งค่าในส่วน Playback (USB to S/PDIF)
+
+1. Double click ที่ SIGNSTEK Q5
+
+    ![Playback_01](pictures/Playback_01.png)
+
+2. ปรับเสียง Speakers ให้อยู่ที่ 0
+
+    ![Playback_02](pictures/Playback_02.png)
+
+3. ปิด Enhancements ทั้งหมด
+
+    ![Playback_03](pictures/Playback_03.png)
+
+4. ปรับ Default Format ให้อยู่ที่ 16 bit, 48000 Hz สูงสุดที่ SIGNSTEK Q5 รองรับ
+
+    ![Playback_04](pictures/Playback_04.png)
+
+5. ปิด Spartial sound
+
+    ![Playback_05](pictures/Playback_05.png)
+
+#### การปรับตั้งค่าในส่วนของ Recording (S/PDIF to USB)
+
+1. Double click ที่ Hifime UR23
+
+    ![Recording_01](pictures/Recording_01.png)
+
+2. ปรับเสียง SPDIF interface ให้อยู่ที่ 100
+
+    ![Recording_02](pictures/Recording_02.png)
+
+3. ปรับ Default Format ให้อยู่ที่ 2 channel, 16 bit, 48000 Hz สูงสุดที่ SIGNSTEK Q5 รองรับ
+
+    ![Recording_03](pictures/Recording_03.png)
+
+### Proof of Concept
+
+
+
 ### สรุปผลการทดสอบ
+
 |ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|MD5|
 |---|---|---|
-|[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/AENZR_AZ1301_C-C_USB31_13cm_md5.txt)|
-|[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/ANKER_A8485_C-C_USB31_90cm_md5.txt)|
-|[ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/ddHifi_TC05_C-C_USB20_15cm_md5.txt)|
-|[FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/FiiO_LT-TC01_C-C_USB20_15cm_md5.txt)|
-|[NEO (created by OYAIDE Elec.) d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/NEO_d%2B_A-B_USB20_100cm_md5.txt)|
-|[OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/OEAudio_OTG_C-C_USB20_12cm_md5.txt)|
-|[RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/RODE_SC17_C-C_USB20_100cm_md5.txt)|
-|[Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/Shanling_UA2_C-C_USB2.0_10cm_md5.txt)|
-|[UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/UGREEN_10350_A-B_USB20_150cm_md5.txt)|
-|[UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.html)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/UGREEN_50996_C-C_USB20_50cm_md5.txt)|
+|[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/AENZR_AZ1301_C-C_USB31_13cm_md5.txt)|
+|[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/ANKER_A8485_C-C_USB31_90cm_md5.txt)|
+|[ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/ddHifi_TC05_C-C_USB20_15cm_md5.txt)|
+|[FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/FiiO_LT-TC01_C-C_USB20_15cm_md5.txt)|
+|[NEO (created by OYAIDE Elec.) d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/NEO_d%2B_A-B_USB20_100cm_md5.txt)|
+|[OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/OEAudio_OTG_C-C_USB20_12cm_md5.txt)|
+|[RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/RODE_SC17_C-C_USB20_100cm_md5.txt)|
+|[Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/Shanling_UA2_C-C_USB2.0_10cm_md5.txt)|
+|[UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/UGREEN_10350_A-B_USB20_150cm_md5.txt)|
+|[UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[7d229a9bf0a3f73c4de0121a5460125b](result_hash/UGREEN_50996_C-C_USB20_50cm_md5.txt)|
 
+## พูดคุยกันหน่อย
