@@ -66,6 +66,14 @@ Notebook ==> **USB Cable** ==> SIGNSTEK Q5 ==> UGREEN TOSLINK Cable ==> Hifime U
 - ปรับ bit depth และ sample rate ให้ตรงกันทั้งระบบ ตั้งแต่ไฟล์ต้นฉบับ, USB DDC และ S/PDIF to USB หากไฟล์ต้นฉบับที่ใช้ในการทดสอบมี  bit depth หรือ sample rate ที่สูงกว่าระบบที่ใช้ทดสอบ ให้ทำการแปลงไฟล์ก่อนทำการทดสอบ
 - เพิ่มเสียงว่าง (silence pad) เข้าไปที่ไฟล์ต้นฉบับ ทางด้านหัวและท้ายด้านละ 2 วินาที เนื่องจากเมื่อกดเล่นเพลงเสียงในช่วงเริ่มต้นอาจจะกระตุกจากการที่โปรแกรมเล่นเพลงกำลังทำการ buffer ไฟล์ ซึ่งจะทำให้ผลการทดลองคลาดเคลื่อน
 
+#### การตรวจสอบ bit depth และ sample rate ไฟล์ต้นฉบับ
+
+sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
+
+![sox_info](pictures/sox_info.png)
+
+#### การแปลง bit depth และ sample rate ไฟล์ต้นฉบับ
+
 #### การปรับตั้งค่าในส่วน Playback (USB to S/PDIF)
 
 1. Double click ที่ SIGNSTEK Q5
