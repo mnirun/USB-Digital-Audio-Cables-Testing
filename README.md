@@ -74,6 +74,10 @@ sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
 
 #### การแปลง bit depth และ sample rate ไฟล์ต้นฉบับ
 
+sox Sennheiser__Sound_Check__by_Tim_Cowie.wav -b 16 -r 48000 -c 2 master_16_48_pad.wav pad 2 2
+
+![sox_convert_pad](pictures/sox_convert_pad.png)
+
 #### การปรับตั้งค่าในส่วน Playback (USB to S/PDIF)
 
 1. Double click ที่ SIGNSTEK Q5
@@ -114,7 +118,7 @@ sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
 
 
 
-### สรุปผลการทดสอบ
+### ผลการทดสอบ
 
 |ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|Spectrogram กลับเฟส|
 |---|---|---|
@@ -129,4 +133,6 @@ sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
 |[UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
 |[UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
 
-## พูดคุยกันหน่อย
+### สรุปผลการทดสอบ
+
+สาย USB ทุกเส้นให้เสียงที่เหมือนกับต้นฉบับ 100% ไม่ว่าจะเปลี่ยนไปใช้สายเส้นไหนก็ตาม แสดงว่าสาย USB ไม่มีผลต่อเสียงที่ได้แต่อย่างใด
