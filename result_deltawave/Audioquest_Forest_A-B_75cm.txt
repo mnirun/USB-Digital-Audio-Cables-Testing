@@ -1,8 +1,8 @@
 
 Performing raw processing only -- all matching turned off
-DeltaWave v2.0.1, 2021-10-20T21:47:52.8873536+07:00
+DeltaWave v2.0.1, 2021-10-20T22:18:46.0797253+07:00
 Reference:  master_16_48_pad.wav[?] 10704384 samples 48000Hz 16bits, stereo, MD5=00
-Comparison: Audioquest_Forest_A-B-75cm.wav[?] 10704384 samples 48000Hz 16bits, stereo, MD5=00
+Comparison: Audioquest_Forest_A-B_75cm.wav[?] 10704384 samples 48000Hz 16bits, stereo, MD5=00
 Settings:
 	Gain:True, Remove DC:True
 	Non-linear Gain EQ:False	Non-linear Phase EQ: False
@@ -80,4 +80,4 @@ Comparison THD+N =    0dB
 Comparison THD   =    0dB
 DONE!
 
-Signature: 82a23d943bf1f336201d1749ae070996
+Signature: a7ec967d28ca9f75f752d53bcf74655f
