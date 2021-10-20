@@ -1,4 +1,4 @@
-# USB-Digital-Audio-Cables-Testing (Draft 2021.10.17)
+# USB-Digital-Audio-Cables-Testing (Draft 2021.10.20)
 
 1. [ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio](##user-content-ความรู้เบื้องต้นเกี่ยวกับ-USB-Digital-Audio)
 
@@ -33,6 +33,7 @@
 ### สาย USB ที่ใช้ทดสอบ
 - [AENZR FPC AZ1301, USB C Male to C Male, USB 3.1 Gen 2](http://www.aenzr.com/pd.jsp?id=31) สายยาว 13 เซนติเมตร
 - [ANKER PowerLine II A8485, USB C Male to C Male, USB 3.1 Gen 2](https://www.anker.com/es/products/A8485011) ได้รับมาตรฐาน [USB-IF Certified](https://www.usb.org/single-product/3563) สายยาว 90 เซนติเมตร
+- [Audioquest Forest, USB A Male to B Male, USB 2.0](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest) สายยาว 75 เซนติเมตร
 - [ddHifi TC05 1st Gen. USB C Male to C Male, USB 2.0](https://www.ddhifi.com/productinfo/469679.html) สายยาว 10 เซนติเมตร
 - [FiiO LT-TC1, USB C Male to C Male USB 2.0](https://www.fiio.com/productinfo/354074.html) สายยาว 12 เซนติเมตร
 - [NEO (created by OYAIDE Elec.) d+ USB class B, USB A Male to B Male , USB 2.0](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/) สายยาว 100 เซนติเมตร
@@ -140,6 +141,7 @@ sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_1
 |---|---|---|
 |[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
 |[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
+|[Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
 |[ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[Spectrogram](visual_spectrogram/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
 |[FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
 |[NEO (created by OYAIDE Elec.) d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
