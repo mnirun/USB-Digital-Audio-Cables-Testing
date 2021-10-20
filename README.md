@@ -66,18 +66,6 @@ Notebook ==> **USB Cable** ==> SIGNSTEK Q5 ==> UGREEN TOSLINK Cable ==> Hifime U
 - ปรับ bit depth และ sample rate ให้ตรงกันทั้งระบบ ตั้งแต่ไฟล์ต้นฉบับ, USB DDC และ S/PDIF to USB หากไฟล์ต้นฉบับที่ใช้ในการทดสอบมี  bit depth หรือ sample rate ที่สูงกว่าระบบที่ใช้ทดสอบ ให้ทำการแปลงไฟล์ก่อนทำการทดสอบ
 - เพิ่มเสียงว่าง (silence pad) เข้าไปที่ไฟล์ต้นฉบับ ทางด้านหัวและท้ายด้านละ 2 วินาที เนื่องจากเมื่อกดเล่นเพลงเสียงในช่วงเริ่มต้นอาจจะกระตุกจากการที่โปรแกรมเล่นเพลงกำลังทำการ buffer ไฟล์ ซึ่งจะทำให้ผลการทดลองคลาดเคลื่อน
 
-#### การตรวจสอบ bit depth และ sample rate ไฟล์ต้นฉบับ
-
-sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
-
-![sox_info](pictures/sox_info.png)
-
-#### การแปลง bit depth และ sample rate ไฟล์ต้นฉบับ
-
-sox Sennheiser__Sound_Check__by_Tim_Cowie.wav -b 16 -r 48000 -c 2 master_16_48_pad.wav pad 2 2
-
-![sox_convert_pad](pictures/sox_convert_pad.png)
-
 #### การปรับตั้งค่าในส่วน Playback (USB to S/PDIF)
 
 1. Double click ที่ SIGNSTEK Q5
@@ -114,9 +102,37 @@ sox Sennheiser__Sound_Check__by_Tim_Cowie.wav -b 16 -r 48000 -c 2 master_16_48_p
 
     ![Recording_03](pictures/Recording_03.png)
 
+#### การตรวจสอบ bit depth และ sample rate ไฟล์ต้นฉบับ
+
+sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
+
+![sox_info](pictures/sox_info.png)
+
+#### การแปลง bit depth และ sample rate ไฟล์ต้นฉบับ
+
+sox Sennheiser__Sound_Check__by_Tim_Cowie.wav -b 16 -r 48000 -c 2 master_16_48_pad.wav pad 2 2
+
+![sox_convert_pad](pictures/sox_convert_pad.png)
+
 ### Proof of Concept
 
+ทดลองปรับ equalizer โดยลองปรับความถี่่ 100 Hz ขึ้นไป 1 dB
 
+ffmpeg -hide_banner -y -i master_16_48_pad.wav -af "equalizer=frequency=100:width_type=h:width=1:gain=1" master_16_48_pad_eq_100.wav
+
+![ffmpeg_eq_100](pictures/ffmpeg_eq_100.png)
+
+จากนั้นลองกลับเฟสเทียบกับไฟล์ต้นฉบับ
+
+sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad_eq_100.wav master_16_48_pad_eq_100_inverted.wav
+
+![sox_phase_invert_100](pictures/sox_phase_invert_100.png)
+
+เมื่อตรวจสอบไฟล์ที่กลับเฟสด้วยภาพ spectrogram จะพบว่าไฟล์ไม่ได้เงียบสนิท
+
+sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_100_inverted.wav -o master_16_48_pad_eq_100_inverted.png
+
+![master_16_48_pad_eq_100_inverted](pictures/master_16_48_pad_eq_100_inverted.png)
 
 ### ผลการทดสอบ
 
