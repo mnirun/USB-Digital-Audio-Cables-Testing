@@ -81,13 +81,13 @@
 
 ### โปรแกรมที่ใช้ทดสอบ
 
-|โปรแกรม|การใช้งาน|
-|-|-|
-|[SoX v14.4.2](http://sox.sourceforge.net/)|แปลงไฟล์เสียง, ตัดไฟล์เสียง, สร้างไฟล์รูปภาพ spectrogram|
-|[fmedia v1.24](https://stsaz.github.io/fmedia/)|เล่นเพลง, บันทึกเสียงเพลง|
-|[Pratt v6.1.53](https://www.fon.hum.uva.nl/praat/)|ตรวจหา offset ของไฟล์เสียง|
-|[FFmpeg v4.4](https://www.ffmpeg.org/)|สร้างไฟล์รูปภาพ waveform|
-|[DeltaWave v2.0.1](https://deltaw.org/)|ตรวจสอบความแตกต่างของไฟล์เสียง|
+|โปรแกรม|เวอร์ชัน|การใช้งาน|
+|-|-|-|
+|[SoX](http://sox.sourceforge.net/)|[14.4.2](https://sourceforge.net/projects/sox/files/sox/14.4.2/)|แปลงไฟล์เสียง, ตัดไฟล์เสียง, สร้างไฟล์รูปภาพ spectrogram|
+|[fmedia](https://stsaz.github.io/fmedia/)|[1.24](https://github.com/stsaz/fmedia/releases/tag/v1.24)|เล่นเพลง, บันทึกเสียงเพลง|
+|[Pratt](https://www.fon.hum.uva.nl/praat/)|[6.1.53](https://www.fon.hum.uva.nl/praat/download_win.html)|ตรวจหา offset ของไฟล์เสียง|
+|[FFmpeg](https://www.ffmpeg.org/)|[4.4](https://www.gyan.dev/ffmpeg/builds/)|สร้างไฟล์รูปภาพ waveform|
+|[DeltaWave](https://deltaw.org/)|[v2.0.1](https://deltaw.org/)|ตรวจสอบความแตกต่างของไฟล์เสียง|
 
 ### เพลงที่ใช้ทดสอบ
 - [Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference) โดยใช้ไฟล์จาก https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav
