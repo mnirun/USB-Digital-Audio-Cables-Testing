@@ -83,7 +83,7 @@ USB รองรับการส่งข้อมูลดังนี้
 
 |ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|
 |-|-|-|-|-|-|
-|NO BRAND|BLUE|A to B|USB 2.0|18|-|
+|NO NAME|BLUE|A to B|USB 2.0|30|-|
 |Audioquest|[Forest](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest)|A to B|USB 2.0|75|-|
 |NEO by OYAIDE|[d+ USB class B](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/)|A to B|USB 2.0|100|-|
 |UGREEN|[80805](https://www.ugreen.com/products/usb-c-to-usb-b-2-0-printer-cable)|C to B|USB 2.0|100|-|
