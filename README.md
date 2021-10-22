@@ -15,6 +15,17 @@
 
 ## ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio
 
+USB Digital Audio คือการส่งสัญญาณเพลงผ่านสาย USB จากอุปกรณ์ต้นทาง เช่น คอมพิวเตอร์, โทรศัพท์มือถือ ไปยังอุปกรณ์ปลานทาง เช่น DAC (Digital to Analog Converter), DDC (Digital to Digital Converter) เป็นต้น
+
+USB รองรับการส่งข้อมูลดังนี้
+
+|รูปแบบ|รายละเอียด|ข้อดี|ข้อเสีย|
+|-|-|-|-|
+|Interrupt|การสื่อสารระยะสั้น ๆ แต่เปลี่ยนแปลงข้อมูลบ่อย ๆ เช่น คีย์บอร์ด, เมาส์, จอยสติก เป็นต้น|ความน่าเชื่อถือสูง|แบนด์วิธต่ำ|
+|Bulk|การส่งข้อมูลทีละมาก ๆ เช่น การคัดลอกไฟล์ เป็นต้น|รับประกันความถูกต้องของข้อมูล|ไม่รับประกันแบนด์วิธ|
+|Isochronous|การส่งข้อมูลแบบเรียลไทม์ เช่น การสตรีมข้อมูลภาพ, เสียง เป็นต้น|รับประกันแบนด์วิธ|ไม่รับประกันความถูกต้องของข้อมูล|
+
+
 - อ้างอิง Google [USB Digital Audio ](https://source.android.com/devices/audio/usb)
 - Cambridge Audio [Our Guide to USB Audio - Why Should I Use it?](https://www.cambridgeaudio.com/usa/en/blog/our-guide-usb-audio-why-should-i-use-it/)
 - EDN [Fundamentals of USB Audio](https://www.edn.com/fundamentals-of-usb-audio/)
