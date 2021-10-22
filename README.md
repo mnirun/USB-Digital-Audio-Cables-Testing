@@ -80,11 +80,14 @@
 
 
 ### โปรแกรมที่ใช้ทดสอบ
-- [FFmpeg v4.4](https://www.ffmpeg.org/)
-- [fmedia v1.24](https://stsaz.github.io/fmedia/)
-- [Pratt v6.1.53](https://www.fon.hum.uva.nl/praat/)
-- [SoX v14.4.2](http://sox.sourceforge.net/)
-- [DeltaWave v2.0.1](https://deltaw.org/)
+
+|โปรแกรม|การใช้งาน|
+|-|-|
+|[SoX v14.4.2](http://sox.sourceforge.net/)|แปลงไฟล์เสียง, ตัดไฟล์เสียง, สร้างไฟล์รูปภาพ spectrogram|
+|[fmedia v1.24](https://stsaz.github.io/fmedia/)|เล่นเพลง, บันทึกเสียงเพลง|
+|[Pratt v6.1.53](https://www.fon.hum.uva.nl/praat/)|ตรวจหา offset ของไฟล์เสียง|
+|[FFmpeg v4.4](https://www.ffmpeg.org/)|สร้างไฟล์รูปภาพ waveform|
+|[DeltaWave v2.0.1](https://deltaw.org/)|ตรวจสอบความแตกต่างของไฟล์เสียง|
 
 ### เพลงที่ใช้ทดสอบ
 - [Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference) โดยใช้ไฟล์จาก https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav
