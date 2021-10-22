@@ -1,6 +1,7 @@
 # USB-Digital-Audio-Cables-Testing (Draft 2021.10.22)
 
-1. [ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio](##user-content-ความรู้เบื้องต้นเกี่ยวกับ-USB-Digital-Audio)
+1. [ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio](#ความรู้เบื้องต้นเกี่ยวกับ-usb-digital-audio)
+2. [สรุปผลการทดสอบ](#สรุปผลการทดสอบ)
 
 ## ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio
 
