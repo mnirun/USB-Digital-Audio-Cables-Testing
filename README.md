@@ -1,4 +1,4 @@
-# USB-Digital-Audio-Cables-Testing (Draft 2021.10.20)
+# USB-Digital-Audio-Cables-Testing (Draft 2021.10.22)
 
 1. [ความรู้เบื้องต้นเกี่ยวกับ USB Digital Audio](##user-content-ความรู้เบื้องต้นเกี่ยวกับ-USB-Digital-Audio)
 
@@ -31,17 +31,42 @@
 - **TOSLINK Cable:** [UGREEN 70890](https://www.ugreen.com/products/fiber-optical-audio-cable) สายยาว 100 เซนติเมตร
 
 ### สาย USB ที่ใช้ทดสอบ
-- [AENZR FPC AZ1301, USB C Male to C Male, USB 3.1 Gen 2](http://www.aenzr.com/pd.jsp?id=31) สายยาว 13 เซนติเมตร
-- [ANKER PowerLine II A8485, USB C Male to C Male, USB 3.1 Gen 2](https://www.anker.com/es/products/A8485011) ได้รับมาตรฐาน [USB-IF Certified](https://www.usb.org/single-product/3563) สายยาว 90 เซนติเมตร
-- [Audioquest Forest, USB A Male to B Male, USB 2.0](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest) สายยาว 75 เซนติเมตร
-- [ddHifi TC05 1st Gen. USB C Male to C Male, USB 2.0](https://www.ddhifi.com/productinfo/469679.html) สายยาว 10 เซนติเมตร
-- [FiiO LT-TC1, USB C Male to C Male USB 2.0](https://www.fiio.com/productinfo/354074.html) สายยาว 12 เซนติเมตร
-- [NEO (created by OYAIDE Elec.) d+ USB class B, USB A Male to B Male , USB 2.0](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/) สายยาว 100 เซนติเมตร
-- [OE Audio OTG Digital Cable, USB C Male to C Male, USB 2.0](https://www.oeaudio.net/oeotg) สายยาว 12 เซนติเมตร
-- [RØDE SC17, USB C Male to C Male, USB 2.0](https://www.rode.com/accessories/cables/sc17) ได้รับมาตรฐาน [USB-IF Certified](https://www.usb.org/single-product/3751) สายยาว 150 เซนติเมตร
-- [Shanling UA2 สายแถม, USB C Male to C Male, USB 2.0](https://en.shanling.com/product/396) สายยาว 120 เซนติเมตร
-- [UGREEN 10350, USB A Male to B Male USB 2.0](https://www.ugreen.com/products/usb-2-0-printer-scanner-cable) สายยาว 150 เซนติเมตร
-- [UGREEN 50996, USB C Male to C Male, USB 2.0](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153) สายยาว 50 เซนติเมตร
+
+แบ่งกลุ่มสาย USB ออกเป็น 3 กลุ่ม กลุ่มละ 5 เส้น รวมเป็นสาย USB ทั้งหมด 15 เส้น ได้แก่
+- กลุ่มสาย USB C แบบสั้น ความยาวน้อยกว่าหรือเท่ากับ 20 เซนติเมตร
+- กลุ่มสาย USB C ทั่วไป ความยาวมากกว่า 20 เซนติเมตร
+- กลุ่มสาย USB B ทุกความยาว
+
+####  กลุ่มสาย USB C แบบสั้น ความยาวน้อยกว่าหรือเท่ากับ 20 เซนติเมตร
+
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (เซนติเมตร)|USB-IF Certified|
+|-|-|-|-|-|-|
+|Shanling|[สายแถมจาก UA2](https://en.shanling.com/product/396)|C to C|USB 2.0|10|-|
+|ddHifi|[TC05 1st Gen.](https://www.ddhifi.com/productinfo/469679.html)|C to C|USB 2.0|10|-|
+|FiiO|[LT-TC1](https://www.fiio.com/productinfo/354074.html)|C to C|USB 2.0|12|-|
+|OE Audio|[OTG Digital Cable](https://www.oeaudio.net/oeotg)|C to C|USB 2.0|12|-|
+|AENZR|[FPC AZ1301](http://www.aenzr.com/pd.jsp?id=31)|C to C|USB 3.1 Gen 2|13|-|
+
+#### กลุ่มสาย USB C ทั่วไป ความยาวมากกว่า 20 เซนติเมตร
+
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (เซนติเมตร)|USB-IF Certified|
+|-|-|-|-|-|-|
+|UGREEN|[50996](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153)|C to C|USB 2.0|50|-|
+|ANKER|[PowerLine II A8485](https://www.anker.com/es/products/A8485011)|C to C|USB 3.1 Gen 2|90|[✔](https://www.usb.org/single-product/3563)|
+|Verbatim|[65684](https://www.verbatim.com.hk/accessories/mobile-accessories/sync-charge-cables/usb3-2-c-to-c-cable.html)|C to C|USB 3.2|100|-|
+|RØDE|[SC17](https://www.rode.com/accessories/cables/sc17)|C to C|USB 2.0|150|[✔](https://www.usb.org/single-product/3751)|
+|KUULAA|[KL-X31](http://www.kuulaa.cn/plus/view.php?aid=45)|C to C|USB 2.0|300|-|
+
+#### กลุ่มสาย USB B ทุกความยาว
+
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (เซนติเมตร)|USB-IF Certified|
+|-|-|-|-|-|-|
+|NO BRAND|BLUE|A to B|USB 2.0|18|-|
+|Audioquest|[Forest](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest)|A to B|USB 2.0|75|-|
+|NEO by OYAIDE|[d+ USB class B](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/)|A to B|USB 2.0|100|-|
+|UGREEN|[80805](https://www.ugreen.com/products/usb-c-to-usb-b-2-0-printer-cable)|C to B|USB 2.0|100|-|
+|UGREEN|[10350](https://www.ugreen.com/products/usb-2-0-printer-scanner-cable)|A to B|USB 2.0|150|-|
+
 
 ### โปรแกรมที่ใช้ทดสอบ
 - [FFmpeg v4.4](https://www.ffmpeg.org/)
@@ -138,7 +163,7 @@ sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_1
 ### ผลการทดสอบ
 
 |ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|Spectrogram กลับเฟส|
-|---|---|---|
+|-|-|-|
 |[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
 |[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
 |[Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
