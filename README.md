@@ -39,7 +39,7 @@
 
 ####  กลุ่มสาย USB C แบบสั้น ความยาวน้อยกว่าหรือเท่ากับ 20 เซนติเมตร
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (เซนติเมตร)|USB-IF Certified|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|
 |-|-|-|-|-|-|
 |Shanling|[สายแถมจาก UA2](https://en.shanling.com/product/396)|C to C|USB 2.0|10|-|
 |ddHifi|[TC05 1st Gen.](https://www.ddhifi.com/productinfo/469679.html)|C to C|USB 2.0|10|-|
@@ -49,7 +49,7 @@
 
 #### กลุ่มสาย USB C ทั่วไป ความยาวมากกว่า 20 เซนติเมตร
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (เซนติเมตร)|USB-IF Certified|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|
 |-|-|-|-|-|-|
 |UGREEN|[50996](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153)|C to C|USB 2.0|50|-|
 |ANKER|[PowerLine II A8485](https://www.anker.com/es/products/A8485011)|C to C|USB 3.1 Gen 2|90|[✔](https://www.usb.org/single-product/3563)|
@@ -59,7 +59,7 @@
 
 #### กลุ่มสาย USB B ทุกความยาว
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (เซนติเมตร)|USB-IF Certified|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|
 |-|-|-|-|-|-|
 |NO BRAND|BLUE|A to B|USB 2.0|18|-|
 |Audioquest|[Forest](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest)|A to B|USB 2.0|75|-|
