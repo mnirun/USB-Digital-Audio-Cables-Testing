@@ -176,7 +176,7 @@ sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
 
 ![sox_info](pictures/sox_info.png)
 
-จากผลที่ได้ พบว่า
+จากการตรวจสอบพบว่า
 - **bit depth (precision)** อยู่ที่ 24 bit ต้องทำการลด bit rate ให้อยู่ที่ 16 bit ก่อน เนื่องจาก SIGNSTEK Q5 รองรับ bit rate สูงสุดที่ 16 bit
 - **sample rate** อยู๋ที่ 48,000 Hz ไม่ต้องทำการลด sample rate
 
