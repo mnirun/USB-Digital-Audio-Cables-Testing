@@ -46,7 +46,7 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 ## การเลือกความเร็วสาย USB ให้เหมาะสมกับอุปกรณ์ USB
 
-ในการเลือกใช้สาย USB ควรเลือกใช้สายให้เหมาะสมกับความเร็วของอุปกรณ์ USB นั้น ๆ โดยเราสามารถตรวจสอบความเร็วของอุปกรณ์ USB ได้ด้วยโปรแกรม [Thesycon USB Descriptor Dumper](https://www.thesycon.de/eng/usb_descriptordumper.shtml)
+ในการเลือกใช้สาย USB ควรเลือกใช้สายให้เหมาะสมกับความเร็วของอุปกรณ์ USB นั้น ๆ โดยเราสามารถตรวจสอบความเร็วของอุปกรณ์ USB ได้ด้วยโปรแกรม [:link: Thesycon USB Descriptor Dumper](https://www.thesycon.de/eng/usb_descriptordumper.shtml)
 
 จากการตรวจสอบ Shanling UA2 พบว่าความเร็วสูงสุดคือ USB 2.0 HighSpeed การเลือกใช้สาย USB 2.0 จึงเพียงพอต่อการใช้งานแล้ว การเลือกใช้สาย USB 3.0 ที่มีความเร็วมากกว่าอุปกรณ์ USB รองรับจึงไม่ได้ทำให้รับส่งข้อมูลเร็วขึ้นแต่อย่างใด
 
@@ -58,12 +58,12 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 ### อุปกรณ์ที่ใช้ทดสอบ
 
-- **USB to S/PDIF Digital to Digital Converter:** [SIGNSTEK Q5 USB DDC/DAC](https://www.amazon.co.jp/-/en/dp/B00X9TY8ZW/) UAC 1.0 16bit/48kHz, ชิป [Burr-Brown PCM2407](https://www.ti.com/product/PCM2704)
-- **S/PDIF to USB Digital to Digital Converter:** [Hifime UR23 SPDIF Optical to USB Converter](https://hifimediy.com/product/hifime-ur23-spdif-optical-to-usb-converter/) UAC 1.0 24bit/96kHz, ชิป [Savitech SA9023](https://www.savitech.co/usb-products)
-- **USB Cable Tester:** [BitTradeOne USB CABLE CHECKER 2](https://bit-trade-one.co.jp/adusbcim/)
-- **USB C Female to A Male Adapter:** [Mcdodo OT-697](https://www.mcdodolife.com/products/ot-697-full-compatibility-type-c-5a-to-usb-a-2.0-c.html)
-- **USB C Female to B Male Adapter:** [UGREEN 20120](https://ugreenvietnam.com/ugreen-20120-usb-2-0-duc-may-in-ra-dau-cai-type-c-vo-nhom-mau-xam-us382-20020120.html)
-- **TOSLINK Cable:** [UGREEN 70890](https://www.ugreen.com/products/fiber-optical-audio-cable) สายยาว 100 เซนติเมตร
+- **USB to S/PDIF Digital to Digital Converter:** [:link: SIGNSTEK Q5 USB DDC/DAC](https://www.amazon.co.jp/-/en/dp/B00X9TY8ZW/) UAC 1.0 16bit/48kHz, ชิป [:link: Burr-Brown PCM2407](https://www.ti.com/product/PCM2704)
+- **S/PDIF to USB Digital to Digital Converter:** [:link: Hifime UR23 SPDIF Optical to USB Converter](https://hifimediy.com/product/hifime-ur23-spdif-optical-to-usb-converter/) UAC 1.0 24bit/96kHz, ชิป [:link: Savitech SA9023](https://www.savitech.co/usb-products)
+- **USB Cable Tester:** [:link: BitTradeOne USB CABLE CHECKER 2](https://bit-trade-one.co.jp/adusbcim/)
+- **USB C Female to A Male Adapter:** [:link: Mcdodo OT-697](https://www.mcdodolife.com/products/ot-697-full-compatibility-type-c-5a-to-usb-a-2.0-c.html)
+- **USB C Female to B Male Adapter:** [:link: UGREEN 20120](https://ugreenvietnam.com/ugreen-20120-usb-2-0-duc-may-in-ra-dau-cai-type-c-vo-nhom-mau-xam-us382-20020120.html)
+- **TOSLINK Cable:** [:link: UGREEN 70890](https://www.ugreen.com/products/fiber-optical-audio-cable) สายยาว 100 เซนติเมตร
 
 ### สาย USB ที่ใช้ทดสอบ
 
@@ -74,47 +74,47 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 ####  กลุ่มสาย USB C แบบสั้น ความยาวน้อยกว่าหรือเท่ากับ 20 เซนติเมตร
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|
-|-|-|-|-|-|-|
-|Shanling|[สายแถมจาก UA2](https://en.shanling.com/product/396)|C to C|USB 2.0|10|-|
-|ddHifi|[TC05 1st Gen.](https://www.ddhifi.com/productinfo/469679.html)|C to C|USB 2.0|10|-|
-|FiiO|[LT-TC1](https://www.fiio.com/productinfo/354074.html)|C to C|USB 2.0|12|-|
-|OE Audio|[OTG Digital Cable](https://www.oeaudio.net/oeotg)|C to C|USB 2.0|12|-|
-|AENZR|[FPC AZ1301](http://www.aenzr.com/pd.jsp?id=31)|C to C|USB 3.1 Gen 2|13|-|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย|
+|-|-|-|-|-|-|-|
+|Shanling|[:link: สายแถมจาก UA2](https://en.shanling.com/product/396)|C to C|USB 2.0|10|-|[:camera:](pictures/Shanling_UA2_C-C_USB20_10cm.jpg)|
+|ddHifi|[:link: TC05 1st Gen.](https://www.ddhifi.com/productinfo/469679.html)|C to C|USB 2.0|10|-|[:camera:](pictures/ddHifi_TC05_C-C_USB20_15cm.jpg)|
+|FiiO|[:link: LT-TC1](https://www.fiio.com/productinfo/354074.html)|C to C|USB 2.0|12|-|[:camera:](pictures/FiiO_LT-TC01_C-C_USB20_15cm.jpg)|
+|OE Audio|[:link: OTG Digital Cable](https://www.oeaudio.net/oeotg)|C to C|USB 2.0|12|-|[:camera:](pictures/OEAudio_OTG_C-C_USB20_12cm.jpg)|
+|AENZR|[:link: FPC AZ1301](http://www.aenzr.com/pd.jsp?id=31)|C to C|USB 3.1 Gen 2|13|-|[:camera:](pictures/AENZR_AZ1301_C-C_USB31_13cm.jpg)|
 
 #### กลุ่มสาย USB C ทั่วไป ความยาวมากกว่า 20 เซนติเมตร
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|
-|-|-|-|-|-|-|
-|UGREEN|[50996](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153)|C to C|USB 2.0|50|-|
-|ANKER|[PowerLine II A8485](https://www.anker.com/es/products/A8485011)|C to C|USB 3.1 Gen 2|90|[:heavy_check_mark:](https://www.usb.org/single-product/3563)|
-|Verbatim|[65684](https://www.verbatim.com.hk/accessories/mobile-accessories/sync-charge-cables/usb3-2-c-to-c-cable.html)|C to C|USB 3.2|100|-|
-|RØDE|[SC17](https://www.rode.com/accessories/cables/sc17)|C to C|USB 2.0|150|[:heavy_check_mark:](https://www.usb.org/single-product/3751)|
-|KUULAA|[KL-X31](http://www.kuulaa.cn/plus/view.php?aid=45)|C to C|USB 2.0|300|-|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย|
+|-|-|-|-|-|-|-|
+|UGREEN|[:link: 50996](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153)|C to C|USB 2.0|50|-|[:camera:](pictures/UGREEN_50996_C-C_USB20_50cm.jpg)|
+|ANKER|[:link: PowerLine II A8485](https://www.anker.com/es/products/A8485011)|C to C|USB 3.1 Gen 2|90|[:heavy_check_mark:](https://www.usb.org/single-product/3563)|[:camera:](pictures/ANKER_A8485_C-C_USB31_90cm.jpg)|
+|Verbatim|[:link: 65684](https://www.verbatim.com.hk/accessories/mobile-accessories/sync-charge-cables/usb3-2-c-to-c-cable.html)|C to C|USB 3.2|100|-|[:camera:](pictures/Verbatim_65684_C-C_USB32_100cm.jpg)|
+|RØDE|[:link: SC17](https://www.rode.com/accessories/cables/sc17)|C to C|USB 2.0|150|[:heavy_check_mark:](https://www.usb.org/single-product/3751)|[:camera:](pictures/RODE_SC17_C-C_USB20_100cm.jpg)|
+|KUULAA|[:link: KL-X31](http://www.kuulaa.cn/plus/view.php?aid=45)|C to C|USB 2.0|300|-|[:camera:](pictures/KUULAA_KL-X31_C-C_USB20_300cm.jpg)|
 
 #### กลุ่มสาย USB B ทุกความยาว
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|
-|-|-|-|-|-|-|
-|NO NAME|BLUE|A to B|USB 2.0|30|-|
-|Audioquest|[Forest](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest)|A to B|USB 2.0|75|-|
-|NEO by OYAIDE|[d+ USB class B](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/)|A to B|USB 2.0|100|-|
-|UGREEN|[80805](https://www.ugreen.com/products/usb-c-to-usb-b-2-0-printer-cable)|C to B|USB 2.0|100|-|
-|UGREEN|[10350](https://www.ugreen.com/products/usb-2-0-printer-scanner-cable)|A to B|USB 2.0|150|-|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย|
+|-|-|-|-|-|-|-|
+|NO NAME|BLUE|A to B|USB 2.0|30|-|[:camera:](pictures/NONAME_BLUE_A-B_USB20_30cm.jpg)|
+|Audioquest|[:link: Forest](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest)|A to B|USB 2.0|75|-|[:camera:](pictures/Audioquest_Forest_A-B_USB20_75cm.jpg)|
+|NEO by OYAIDE|[:link: d+ USB class B](https://www.neo-w.com/english/d_plus/d_plus_usb_ser/)|A to B|USB 2.0|100|-|[:camera:](pictures/NEO_d%2B_A-B_USB20_100cm.jpg)|
+|UGREEN|[:link: 80805](https://www.ugreen.com/products/usb-c-to-usb-b-2-0-printer-cable)|C to B|USB 2.0|100|-|[:camera:](pictures/UGREEN_80805_C-B_USB20_100cm.jpg)|
+|UGREEN|[:link: 10350](https://www.ugreen.com/products/usb-2-0-printer-scanner-cable)|A to B|USB 2.0|150|-|[:camera:](pictures/UGREEN_10350_A-B_USB20_150cm.jpg)|
 
 
 ### โปรแกรมที่ใช้ทดสอบ
 
 |โปรแกรม|เวอร์ชัน|การใช้งาน|
 |-|-|-|
-|[SoX](http://sox.sourceforge.net/)|[14.4.2](https://sourceforge.net/projects/sox/files/sox/14.4.2/)|แปลงไฟล์เสียง, ตัดไฟล์เสียง, สร้างไฟล์รูปภาพ spectrogram|
-|[fmedia](https://stsaz.github.io/fmedia/)|[1.24](https://github.com/stsaz/fmedia/releases/tag/v1.24)|เล่นเพลง, บันทึกเสียงเพลง|
-|[Pratt](https://www.fon.hum.uva.nl/praat/)|[6.1.53](https://www.fon.hum.uva.nl/praat/download_win.html)|ตรวจหา offset ของไฟล์เสียง|
-|[FFmpeg](https://www.ffmpeg.org/)|[4.4](https://www.gyan.dev/ffmpeg/builds/)|สร้างไฟล์รูปภาพ waveform|
-|[DeltaWave](https://deltaw.org/)|[v2.0.1](https://deltaw.org/)|ตรวจสอบความแตกต่างของไฟล์เสียง|
+|[:computer: SoX](http://sox.sourceforge.net/)|[:floppy_disk: 14.4.2](https://sourceforge.net/projects/sox/files/sox/14.4.2/)|แปลงไฟล์เสียง, ตัดไฟล์เสียง, สร้างไฟล์รูปภาพ spectrogram|
+|[:computer: fmedia](https://stsaz.github.io/fmedia/)|[:floppy_disk: 1.24](https://github.com/stsaz/fmedia/releases/tag/v1.24)|เล่นเพลง, บันทึกเสียงเพลง|
+|[:computer: Pratt](https://www.fon.hum.uva.nl/praat/)|[:floppy_disk: 6.1.53](https://www.fon.hum.uva.nl/praat/download_win.html)|ตรวจหา offset ของไฟล์เสียง|
+|[:computer: FFmpeg](https://www.ffmpeg.org/)|[:floppy_disk: 4.4](https://www.gyan.dev/ffmpeg/builds/)|สร้างไฟล์รูปภาพ waveform|
+|[:computer: DeltaWave](https://deltaw.org/)|[:floppy_disk: 2.0.1](https://deltaw.org/)|ตรวจสอบความแตกต่างของไฟล์เสียง|
 
 ### เพลงที่ใช้ทดสอบ
-- [Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference) โดยใช้ไฟล์จาก https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav
+- [:link: Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference) โดยใช้ไฟล์จาก [:headphones: https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav](https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav)
 
 ### วิธีการทดสอบ
 
@@ -200,20 +200,20 @@ sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_1
 
 ### ผลการทดสอบ
 
-|ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|Spectrogram กลับเฟส|
-|-|-|-|
-|[AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
-|[ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
-|[Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
-|[ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[Spectrogram](visual_spectrogram/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
-|[FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
-|[NEO (created by OYAIDE Elec.) d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
-|[OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[Spectrogram](visual_spectrogram/OEAudio_OTG_C-C_USB20_12cm_inverted.png)|
-|[RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[Spectrogram](visual_spectrogram/RODE_SC17_C-C_USB20_100cm_inverted.png)|
-|[Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[Spectrogram](visual_spectrogram/Shanling_UA2_C-C_USB2.0_10cm_inverted.png)|
-|[UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
-|[UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
+|กลุ่ม|ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|Spectrogram กลับเฟส|
+|-|-|-|-|
+|USB C ≤ 20 ซม.|[:headphones: Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[:floppy_disk: 100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[:mag: Spectrogram](visual_spectrogram/Shanling_UA2_C-C_USB2.0_10cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:headphones: ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[:mag: Spectrogram](visual_spectrogram/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:headphones: FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[:mag: Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:headphones: OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[:floppy_disk: 100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[:mag: Spectrogram](visual_spectrogram/OEAudio_OTG_C-C_USB20_12cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:headphones: AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[:floppy_disk: 100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[:mag: Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
+|USB C > 20 ซม.|[:headphones: UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
+|USB C > 20 ซม.|[:headphones: ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[:floppy_disk: 100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[:mag: Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
+|USB C > 20 ซม.|[:headphones: RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/RODE_SC17_C-C_USB20_100cm_inverted.png)|
+|USB B|[:headphones: Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[:floppy_disk: 100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[:mag: Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
+|USB B|[:headphones: NEO by OYAIDE d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
+|USB B|[:headphones: UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
 
 ### สรุปผลการทดสอบ
 
-สาย USB ทุกเส้นให้เสียงที่เหมือนกับต้นฉบับ 100% ไม่ว่าจะเปลี่ยนไปใช้สายเส้นไหนก็ตาม แสดงว่าสาย USB ไม่มีผลต่อเสียงที่ได้แต่อย่างใด
+จากการทดลองสาย USB ตั้งแต่ความยาวสาย 10 ซม. ถึง 300 ซม., ความเร็วสาย USB 2.0 ถึง USB 3.2 ทุกเส้นให้เสียงที่เหมือนกับต้นฉบับ 100% ไม่ว่าจะเปลี่ยนไปใช้สายเส้นไหนก็ตาม แสดงว่าสาย USB ไม่มีผลต่อเสียงที่ได้แต่อย่างใด
