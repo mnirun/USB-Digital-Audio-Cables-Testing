@@ -214,7 +214,7 @@ sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_1
 |USB B|[:headphones: NONAME BLUE](NONAME_BLUE_A-B_USB20_30cm.wav)|[:floppy_disk: 100%](result_deltawave/NONAME_BLUE_A-B_USB20_30cm.txt)|[:mag: Spectrogram](visual_spectrogram/NONAME_BLUE_A-B_USB20_30cm_inverted.png)|
 |USB B|[:headphones: Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[:floppy_disk: 100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[:mag: Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
 |USB B|[:headphones: NEO by OYAIDE d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
-|USB B|[:headphones: UGREEN 80805](recorded_trim/UGREEN_80805_A-B_USB20_150cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_80805_A-B_USB20_150cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_80805_A-B_USB20_150cm_inverted.png)|
+|USB B|[:headphones: UGREEN 80805](recorded_trim/UGREEN_80805_C-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_80805_C-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_80805_C-B_USB20_100cm_inverted.png)|
 |USB B|[:headphones: UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
 
 ### สรุปผลการทดลอง
