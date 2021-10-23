@@ -172,7 +172,7 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 ทำการตรวจสอบ bit depth และ sample rate ไฟล์ต้นฉบับด้วยโปรแกรม sox โดยใช้คำสั่ง
 
-sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
+> sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
 
 ![sox_info](pictures/sox_info.png)
 
@@ -184,13 +184,13 @@ sox --info Sennheiser__Sound_Check__by_Tim_Cowie.wav
 
 ทำการแปลง bit depth และ sample rate ไฟล์ต้นฉบับด้วยโปรแกรม sox พร้อมกับเพิ่มเสียงว่างทางด้านหัวและท้ายด้านละ 2 วินาที แล้วบันทึกเป็นไฟล์ใหม่ชื่อว่า master_16_48_pad.wav โดยใช้คำสั่ง
 
-sox Sennheiser__Sound_Check__by_Tim_Cowie.wav -b 16 -r 48000 -c 2 master_16_48_pad.wav pad 2 2
+> sox Sennheiser__Sound_Check__by_Tim_Cowie.wav -b 16 -r 48000 -c 2 master_16_48_pad.wav pad 2 2
 
 ![sox_convert_pad](pictures/sox_convert_pad.png)
 
 หากต้องการเพิ่มเสียงว่างเพียงอย่างเดียว ให้ใช้คำสั่ง
 
-sox Sennheiser__Sound_Check__by_Tim_Cowie.wav master_16_48_pad.wav pad 2 2
+> sox Sennheiser__Sound_Check__by_Tim_Cowie.wav master_16_48_pad.wav pad 2 2
 
 ### การทดสอบความถูกต้องของวิธีการทดลอง
 
@@ -202,7 +202,7 @@ sox Sennheiser__Sound_Check__by_Tim_Cowie.wav master_16_48_pad.wav pad 2 2
 
 ทำการการปรับไฟล์เสียงต้นฉบับผ่านการปรับ equalizer ด้วยโปรแกรม FFmpeg โดยใช้คำสั่ง
 
-ffmpeg -hide_banner -y -i master_16_48_pad.wav -af "equalizer=frequency=100:width_type=h:width=1:gain=1" master_16_48_pad_eq_3000.wav
+> ffmpeg -hide_banner -y -i master_16_48_pad.wav -af "equalizer=frequency=100:width_type=h:width=1:gain=1" master_16_48_pad_eq_3000.wav
 
 ![ffmpeg_eq_3000](pictures/ffmpeg_eq_3000.png)
 
@@ -224,19 +224,17 @@ ffmpeg -hide_banner -y -i master_16_48_pad.wav -af "equalizer=frequency=100:widt
 
 ทำการทดสอบความถูกต้องของวิธีการทดลองกับไฟล์ต้นฉบับเอง ผ่านการกลับเฟสเสียด้วยโปรแกรม sox โดยใช้คำสั่ง
 
-sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad.wav master_16_48_pad_inverted.wav
-
-
+> sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad.wav master_16_48_pad_inverted.wav
 
 จากนั้นลองกลับเฟสเทียบกับไฟล์ต้นฉบับ
 
-sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad_eq_100.wav master_16_48_pad_eq_100_inverted.wav
+> sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad_eq_100.wav master_16_48_pad_eq_100_inverted.wav
 
 ![sox_phase_invert_100](pictures/sox_phase_invert_100.png)
 
 เมื่อตรวจสอบไฟล์ที่กลับเฟสด้วยภาพ spectrogram จะพบว่าไฟล์ไม่ได้เงียบสนิท
 
-sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_100_inverted.wav -o master_16_48_pad_eq_100_inverted.png
+> sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_100_inverted.wav -o master_16_48_pad_eq_100_inverted.png
 
 ![master_16_48_pad_eq_100_inverted](pictures/master_16_48_pad_eq_100_inverted.png)
 
