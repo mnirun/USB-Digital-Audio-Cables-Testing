@@ -8,7 +8,7 @@
     - [สาย USB ที่ใช้ทดลอง](#สาย-usb-ที่ใช้ทดลอง)
     - [โปรแกรมที่ใช้ทดลอง](#โปรแกรมที่ใช้ทดลอง)
     - [เพลงที่ใช้ทดลอง](#เพลงที่ใช้ทดลอง)
-    - [การเตรียมสภาพแวดล้อมเพื่อการทดลอง (Test Environment Setup)](#การเตรียมสภาพแวดล้อมเพื่อการทดลอง-test-environment-setup)
+    - [การเตรียมสภาพแวดล้อมเพื่อการทดลอง](#การเตรียมสภาพแวดล้อมเพื่อการทดลอง)
     - [Proof of Concept](#proof-of-concept)
     - [ผลการทดลอง](#ผลการทดลอง)
 - [สรุปผลการทดลอง](#สรุปผลการทดลอง)
@@ -62,7 +62,7 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 6. ทำการกลับเฟสไฟล์เสียงที่บันทึกกับไฟล์ต้นฉบับ
 7. ตรวจสอบไฟล์ที่ได้กลับเฟสด้วยโปรแกรมว่ามีข้อมูลเหมือนกับต้นฉบับหรือไม่
 
-:computer: Notebook ==> :headphones: **USB Cable** ==> :arrow_forward: SIGNSTEK Q5 ==> :headphones: UGREEN TOSLINK Cable ==> :arrow_forward: Hifime UR23 ==> :computer: Notebook
+:computer: Notebook ==> :musical_score: **USB Cable** ==> :arrow_forward: SIGNSTEK Q5 ==> :musical_score: UGREEN TOSLINK Cable ==> :arrow_forward: Hifime UR23 ==> :computer: Notebook
 
 ![Test Rig 1](pictures/IMG20211016153917_1600.jpg)
 
@@ -77,7 +77,7 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 |[:computer: DeltaWave](https://deltaw.org/)|[:floppy_disk: 2.0.1](https://deltaw.org/)|ตรวจสอบความแตกต่างของไฟล์เสียง|
 
 ### เพลงที่ใช้ทดลอง
-- [:link: Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference) โดยใช้ไฟล์จาก [:headphones: https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav](https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav)
+- [:link: Sennheiser 'Sound Check' by Tim Cowie](https://en-us.sennheiser.com/hearthedifference) โดยใช้ไฟล์จาก [:musical_score: https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav](https://assets.sennheiser.com/global-downloads/file/13888/Sennheiser__Sound_Check__by_Tim_Cowie.wav)
 
 ### อุปกรณ์ที่ใช้ทดลอง
 
@@ -96,7 +96,7 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 ####  กลุ่มสาย USB C แบบสั้น ความยาวน้อยกว่าหรือเท่ากับ 20 เซนติเมตร
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประเภทหัวต่อ|ความเร็วสาย|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย<img width=10/>|
 |-|-|-|-|-|-|-|
 |Shanling|[:link: สายแถมจาก UA2](https://en.shanling.com/product/396)|C to C|USB 2.0|10|-|[:camera:](pictures/Shanling_UA2_C-C_USB20_10cm.jpg)|
 |ddHifi|[:link: TC05 1st Gen.](https://www.ddhifi.com/productinfo/469679.html)|C to C|USB 2.0|10|-|[:camera:](pictures/ddHifi_TC05_C-C_USB20_15cm.jpg)|
@@ -106,17 +106,17 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 #### กลุ่มสาย USB C ทั่วไป ความยาวมากกว่า 20 เซนติเมตร
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประเภทหัวต่อ|ความเร็วสาย|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย<img width=10/>|
 |-|-|-|-|-|-|-|
 |UGREEN|[:link: 50996](https://www.ugreen.com.ph/products/usb-c-to-usb-c-cable?variant=16295877935153)|C to C|USB 2.0|50|-|[:camera:](pictures/UGREEN_50996_C-C_USB20_50cm.jpg)|
-|ANKER|[:link: PowerLine II A8485](https://www.anker.com/es/products/A8485011)|C to C|USB 3.1 Gen 2|90|[:heavy_check_mark:](https://www.usb.org/single-product/3563)|[:camera:](pictures/ANKER_A8485_C-C_USB31_90cm.jpg)|
+|ANKER|[:link: A8485](https://www.anker.com/es/products/A8485011)|C to C|USB 3.1 Gen 2|90|[:heavy_check_mark:](https://www.usb.org/single-product/3563)|[:camera:](pictures/ANKER_A8485_C-C_USB31_90cm.jpg)|
 |Verbatim|[:link: 65684](https://www.verbatim.com.hk/accessories/mobile-accessories/sync-charge-cables/usb3-2-c-to-c-cable.html)|C to C|USB 3.2|100|-|[:camera:](pictures/Verbatim_65684_C-C_USB32_100cm.jpg)|
 |RØDE|[:link: SC17](https://www.rode.com/accessories/cables/sc17)|C to C|USB 2.0|150|[:heavy_check_mark:](https://www.usb.org/single-product/3751)|[:camera:](pictures/RODE_SC17_C-C_USB20_100cm.jpg)|
 |KUULAA|[:link: KL-X31](http://www.kuulaa.cn/plus/view.php?aid=45)|C to C|USB 2.0|300|-|[:camera:](pictures/KUULAA_KL-X31_C-C_USB20_300cm.jpg)|
 
 #### กลุ่มสาย USB B ทุกความยาว
 
-|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประภทหัวต่อ|ความเร็วสาย<img width=30/>|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย|
+|ยี่ห้อ<img width=80/>|รุ่น<img width=120/>|ประเภทหัวต่อ|ความเร็วสาย|ความยาวสาย (ซม.)|USB-IF Certified|รูปถ่าย<img width=10/>|
 |-|-|-|-|-|-|-|
 |NONAME|BLUE|A to B|USB 2.0|30|-|[:camera:](pictures/NONAME_BLUE_A-B_USB20_30cm.jpg)|
 |Audioquest|[:link: Forest](https://www.audioquest.com/cables/digital-cables/usb-a-to-usb-b/forest)|A to B|USB 2.0|75|-|[:camera:](pictures/Audioquest_Forest_A-B_USB20_75cm.jpg)|
@@ -124,13 +124,13 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 |UGREEN|[:link: 80805](https://www.ugreen.com/products/usb-c-to-usb-b-2-0-printer-cable)|C to B|USB 2.0|100|-|[:camera:](pictures/UGREEN_80805_C-B_USB20_100cm.jpg)|
 |UGREEN|[:link: 10350](https://www.ugreen.com/products/usb-2-0-printer-scanner-cable)|A to B|USB 2.0|150|-|[:camera:](pictures/UGREEN_10350_A-B_USB20_150cm.jpg)|
 
-### การเตรียมสภาพแวดล้อมเพื่อการทดลอง (Test Environment Setup)
+### การเตรียมสภาพแวดล้อมเพื่อการทดลอง
 
 - เครื่อง Notebook ใช้ไฟจากแบตเตอรี่ ไม่เสียบสายไฟ เพื่อป้องกันปัญหา ground loop
 - เปิด Airplane mode เพื่อป้องกันไม่ให้ Windows Update ทำงานเบื้องหลังซึ่งอาจกระทบการอ่าน-เขียนไฟล์ได้
 - ปิดเสียงของ Windows โดยปรับให้เสียงอยู่ที่ 0 เนื่องจากโดยปกติสัญญาณเสียงที่ออกมาจาก USB DDC ทางช่อง Optical Out จะไม่ขึ้นอยู้กับระดับเสียงของ Windows แต่กับ USB DDC บางตัวเมื่อปรับเสียงให้ดังขึ้น ตัวเครื่องเองก็ปรับระดับสัญญาณของ Optical Out ให้สูงขึ้นด้วย ทำให้เสียงที่ได้ไม่เหมือนกับต้นฉบับและอาจเกิดการ clip ของเสียงได้
-- ปรับ bit depth และ sample rate ให้ตรงกันทั้งระบบ ตั้งแต่ไฟล์ต้นฉบับ, USB DDC และ S/PDIF to USB หากไฟล์ต้นฉบับที่ใช้ในการทดลองมี  bit depth หรือ sample rate ที่สูงกว่าระบบที่ใช้ทดลอง ให้ทำการแปลงไฟล์ก่อนทำการทดลอง
-- เพิ่มเสียงว่าง (silence pad) เข้าไปที่ไฟล์ต้นฉบับ ทางด้านหัวและท้ายด้านละ 2 วินาที เนื่องจากเมื่อกดเล่นเพลงเสียงในช่วงเริ่มต้นอาจจะกระตุกจากการที่โปรแกรมเล่นเพลงกำลังทำการ buffer ไฟล์ ซึ่งจะทำให้ผลการทดลองคลาดเคลื่อน
+- ปรับ bit depth และ sample rate ให้ตรงกันทั้งระบบ ตั้งแต่ไฟล์ต้นฉบับ, USB to S/PDIF และ S/PDIF to USB หากไฟล์ต้นฉบับที่ใช้ในการทดลองมี  bit depth หรือ sample rate ที่สูงกว่าระบบที่ใช้ทดลอง ให้ทำการแปลงไฟล์ก่อนทำการทดลอง
+- เพิ่มเสียงว่าง (silence pad) เข้าไปที่ไฟล์ต้นฉบับ ทางด้านหัวและท้ายด้านละ 2 วินาที เนื่องจากเมื่อกดเล่นเพลงเสียงในช่วงเริ่มต้นอาจจะกระตุกจากการที่โปรแกรมเล่นเพลงกำลังทำการ buffer ไฟล์ ซึ่งจะทำให้ผลการทดลองคลาดเคลื่อนได้
 
 #### การปรับตั้งค่าในส่วน Playback (USB to S/PDIF)
 
@@ -204,21 +204,21 @@ sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_1
 
 |กลุ่ม|ไฟล์เสียงที่ปรับ offset แล้ว|เปรียบเทียบ Bit Perfect กับต้นฉบับ|Spectrogram กลับเฟส|
 |-|-|-|-|
-|USB C ≤ 20 ซม.|[:headphones: Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[:floppy_disk: 100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[:mag: Spectrogram](visual_spectrogram/Shanling_UA2_C-C_USB2.0_10cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:headphones: ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[:mag: Spectrogram](visual_spectrogram/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:headphones: FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[:mag: Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:headphones: OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[:floppy_disk: 100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[:mag: Spectrogram](visual_spectrogram/OEAudio_OTG_C-C_USB20_12cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:headphones: AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[:floppy_disk: 100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[:mag: Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
-|USB C > 20 ซม.|[:headphones: UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
-|USB C > 20 ซม.|[:headphones: ANKER PowerLine II A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[:floppy_disk: 100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[:mag: Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
-|USB C > 20 ซม.|[:headphones: Verbatim 65684](recorded_trim/Verbatim_65684_C-C_USB32_100cm.wav)|[:floppy_disk: 100%](result_deltawave/Verbatim_65684_C-C_USB32_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/Verbatim_65684_C-C_USB32_100cm_inverted.png)|
-|USB C > 20 ซม.|[:headphones: RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/RODE_SC17_C-C_USB20_100cm_inverted.png)|
-|USB C > 20 ซม.|[:headphones: RKUULAA KL-X31](recorded_trim/KUULAA_KL-X31_C-C_USB20_300cm.wav)|[:floppy_disk: 100%](result_deltawave/KUULAA_KL-X31_C-C_USB20_300cm.txt)|[:mag: Spectrogram](visual_spectrogram/KUULAA_KL-X31_C-C_USB20_300cm_inverted.png)|
-|USB B|[:headphones: NONAME BLUE](NONAME_BLUE_A-B_USB20_30cm.wav)|[:floppy_disk: 100%](result_deltawave/NONAME_BLUE_A-B_USB20_30cm.txt)|[:mag: Spectrogram](visual_spectrogram/NONAME_BLUE_A-B_USB20_30cm_inverted.png)|
-|USB B|[:headphones: Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[:floppy_disk: 100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[:mag: Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
-|USB B|[:headphones: NEO by OYAIDE d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
-|USB B|[:headphones: UGREEN 80805](recorded_trim/UGREEN_80805_C-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_80805_C-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_80805_C-B_USB20_100cm_inverted.png)|
-|USB B|[:headphones: UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:musical_score: Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[:floppy_disk: 100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[:mag: Spectrogram](visual_spectrogram/Shanling_UA2_C-C_USB2.0_10cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:musical_score: ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[:mag: Spectrogram](musical_score/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:musical_score: FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[:mag: Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:musical_score: OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[:floppy_disk: 100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[:mag: Spectrogram](visual_spectrogram/OEAudio_OTG_C-C_USB20_12cm_inverted.png)|
+|USB C ≤ 20 ซม.|[:musical_score: AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[:floppy_disk: 100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[:mag: Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
+|USB C > 20 ซม.|[:musical_score: UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
+|USB C > 20 ซม.|[:musical_score: ANKER A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[:floppy_disk: 100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[:mag: Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
+|USB C > 20 ซม.|[:musical_score: Verbatim 65684](recorded_trim/Verbatim_65684_C-C_USB32_100cm.wav)|[:floppy_disk: 100%](result_deltawave/Verbatim_65684_C-C_USB32_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/Verbatim_65684_C-C_USB32_100cm_inverted.png)|
+|USB C > 20 ซม.|[:musical_score: RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/RODE_SC17_C-C_USB20_100cm_inverted.png)|
+|USB C > 20 ซม.|[:musical_score: RKUULAA KL-X31](recorded_trim/KUULAA_KL-X31_C-C_USB20_300cm.wav)|[:floppy_disk: 100%](result_deltawave/KUULAA_KL-X31_C-C_USB20_300cm.txt)|[:mag: Spectrogram](visual_spectrogram/KUULAA_KL-X31_C-C_USB20_300cm_inverted.png)|
+|USB B|[:musical_score: NONAME BLUE](NONAME_BLUE_A-B_USB20_30cm.wav)|[:floppy_disk: 100%](result_deltawave/NONAME_BLUE_A-B_USB20_30cm.txt)|[:mag: Spectrogram](visual_spectrogram/NONAME_BLUE_A-B_USB20_30cm_inverted.png)|
+|USB B|[:musical_score: Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[:floppy_disk: 100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[:mag: Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
+|USB B|[:musical_score: NEO by OYAIDE d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
+|USB B|[:musical_score: UGREEN 80805](recorded_trim/UGREEN_80805_C-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_80805_C-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_80805_C-B_USB20_100cm_inverted.png)|
+|USB B|[:musical_score: UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
 
 ### สรุปผลการทดลอง
 
