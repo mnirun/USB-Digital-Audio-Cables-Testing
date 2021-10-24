@@ -227,7 +227,11 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 > sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad.wav master_16_48_pad_inverted.wav
 
+![sox_phase_invert](pictures/sox_phase_invert.png)
+
 > sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad_eq_3000.wav master_16_48_pad_eq_3000_inverted.wav
+
+![sox_phase_invert_3000](pictures/sox_phase_invert_3000.png)
 
 > sox master_16_48_pad_inverted.wav -n spectrogram -t master_16_48_pad_inverted.wav -o master_16_48_pad_inverted_spectrogram.png
 
