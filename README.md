@@ -219,7 +219,7 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 เมื่อไฟล์ถูกปรับให้เท่ากันแล้ว เราสามารถเปรียบเทียบไฟล์เสียง 2 ไฟล์ได้หลายวิธี เช่น
 - **ตรวจสอบข้อมูลบิตต่อบิต** หากไฟล์ทั้ง 2 ไฟล์เหมือนกันทุกบิตจะเรียกว่า 100% ฺBit-Perfect โดยเราจะตรวจสอบด้วยโปรแกรม DeltaWave ซึ่งเป็นโปรแกรมสำหรับเปรียบเทียบไฟล์เสียงโดยเฉพาะ
 - **ตรวจสอบโดยการกลับเฟสเสียง** ไฟล์ต้นฉบับเทียบกับไฟล์ที่ได้จากการบันทึกเสียง หากไฟล์ทั้ง 2 เหมือนกัน
-    - เสียงจะหักล้างกันหมดเป็นเสียงเงียบตั้นแต่ตั้นไฟล์จนจบไฟล์ โดยเราจะตรวจสอบด้วยโปรแกรม FFmpeg ตรวจหาระยะเวลาเสียบเงียบทั้งหมดของไฟล์
+    - เสียงจะหักล้างกันหมดเป็นเสียงเงียบตั้งแต่ตั้งไฟล์จนจบไฟล์ โดยเราจะตรวจสอบด้วยโปรแกรม FFmpeg ตรวจหาระยะเวลาเสียบเงียบทั้งหมดของไฟล์
     - ตรวจสอบกราฟ spectrogram จะไม่มีภาพความถี่ใด ๆ ในกราฟ spectrogram โดยใช้โปรแกรม sox วาดกราฟ spectrogram มาให้ดูเพื่อประกอบการทดลองเท่านั้น เนื่องจากในการทดลองนี้จะตรวจสอบการทดลองดัวยข้อมูลที่เป็นตัวอักษรและตัวเลขเท่านั้น ไม่ใช้ตรวจสอบข้อมูลด้วยการใข้สายตาหรือการใช้หูฟังเสียง
 
 #### การทดสอบความถูกต้องของวิธีการทดลองกับไฟล์ต้นฉบับเอง
@@ -300,25 +300,75 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 |ไฟล์ต้นฉบับเอง|[:heavy_check_mark: 100% Bit Perfect](pictures/deltawave_01.png)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](pictures/ffmpeg_silencedetect.png)|[:mag: Spectrogram](pictures/sox_master_16_48_pad_inverted_spectrogram.png)|
 |ไฟล์ที่ปรับเสียงให้ต่างจากต้นฉบับ|[:x: NOT Bit Perfect](pictures/deltawave_02.png)|[:x: เสียงไม่เงียบตลอดไฟล์](pictures/ffmpeg_silencedetect_eq_3000.png)|[:mag: Spectrogram](pictures/sox_master_16_48_pad_eq_3000_inverted.png)|
 
+### ขั้นตอนการทดลองสาย USB
+
+1. ตรวจสอบความยาวของไฟล์ต้นฉบับที่ได้แปลงไฟล์ไว้แล้วด้วยโปรแกรม sox โดยใช้คำสั่ง
+
+    > sox --i -D  master_16_48_pad.wav
+    
+    ![sox_info_duration](pictures/sox_info_duration.png)
+
+2. เปิดหน้าต่าง command prompt ขึ้นมา 2 หน้าต่าง
+
+    หน้าต่างแรกใช้สำหรับบันทึกเสียง 16 bit 48,000 Hz Stero เป็นระยะเวลา 227 วินาที (223 วินาทีจากข้อแรก + 5 วินาที) ด้วยโปรแกรม sox โดยใช้คำสั่ง
+    
+    > fmedia --record --dev-capture=3 --format=int16 --rate=48000 --channels=stereo -o record_usb.wav --until=227
+
+    เมื่อกดปุ่ม Enter ในหน้าต่างแรกแล้ว ให้กดเล่นเพลงต้นฉบับด้วยโปรแกรม sox โดยใช้คำสั่ง
+    
+    > fmedia master_16_48_pad.wav
+
+    ![fmedia_rec_play](pictures/fmedia_rec_play.png)
+
+3. หา offset ของไฟล์ที่บันทึกเสียง ด้วยโปรแกรม Praat โดยใช้คำสั่ง
+
+    > praat findWavOffset.praat master_16_48_pad.wav record_usb.wav
+
+    ![praat_offset](pictures/praat_offset.png)
+
+4. ตัดไฟล์ที่บันทึกเสียงในช่วงต้นและท้ายไฟล์ เพื่อให้ sample ของไฟล์ต้นฉบับและไฟล์ที่บันทึกเสียงตรงกัน โดยใช้ตัวเลข offset จากข้อ 3. และตัวเลขความยาวไฟล์ต้นฉบับจากข้อ 1. ด้วยโปรแกรม sox โดยใช้คำสั่ง
+
+    > sox record_usb.wav record_usb_trim.wav trim 0.904854162441783 223.008000
+
+    ![sox_trim](pictures/sox_trim.png)
+
+5. กลับเฟสเสียงไฟล์ต้นฉบับเทียบกับไฟล์ที่ได้จากการบันทึกเสียงที่ได้ปรับ offset ให้ตรงกันแล้วจากข้อ 4. ด้วยโปรแกรม sox โดยใช้คำสั่ง
+
+    > sox -m -v 1 master_16_48_pad.wav -v -1 record_usb_trim.wav record_usb_trim_inverted.wav
+
+    ![sox_invert](pictures/sox_invert.png)
+
+6. ตรวจหาเสียงเงียบที่ได้กลับเฟสแล้วจากข้อ 5. ด้วยโปรแกรม FFmpeg โดยใช้คำสั่ง
+
+    > ffmpeg -hide_banner -i record_usb_trim_inverted.wav -af silencedetect=n=-90dB -f null -
+
+    ![ffmpeg_silence](pictures/ffmpeg_silence.png)
+
+7. สร้างกราฟ spectrogram จากไฟล์ที่ได้กลับเฟสแล้วจากข้อ 5. ด้วยโปรแกรม sox โดยใช้คำสั่ง
+
+    > sox record_usb_trim_inverted.wav -n spectrogram -t record_usb_trim_inverted.wav -o record_usb_trim_inverted.png
+
+    ![sox_spectrogram](pictures/sox_spectrogram.png)
+
 ### ผลการทดลองสาย USB ทั้ง 15 เส้น
 
-|กลุ่ม|ไฟล์เสียงที่ปรับ offset แล้ว|เทียบ Bit Perfect กับต้นฉบับ|กราฟ Spectrogram กลับเฟส|
-|-|-|-|-|
-|USB C ≤ 20 ซม.|[:musical_score: Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[:floppy_disk: 100%](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[:mag: Spectrogram](visual_spectrogram/Shanling_UA2_C-C_USB2.0_10cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:musical_score: ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[:mag: Spectrogram](musical_score/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:musical_score: FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[:floppy_disk: 100%](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[:mag: Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:musical_score: OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[:floppy_disk: 100%](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[:mag: Spectrogram](visual_spectrogram/OEAudio_OTG_C-C_USB20_12cm_inverted.png)|
-|USB C ≤ 20 ซม.|[:musical_score: AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[:floppy_disk: 100%](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[:mag: Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
-|USB C > 20 ซม.|[:musical_score: UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
-|USB C > 20 ซม.|[:musical_score: ANKER A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[:floppy_disk: 100%](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[:mag: Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
-|USB C > 20 ซม.|[:musical_score: Verbatim 65684](recorded_trim/Verbatim_65684_C-C_USB32_100cm.wav)|[:floppy_disk: 100%](result_deltawave/Verbatim_65684_C-C_USB32_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/Verbatim_65684_C-C_USB32_100cm_inverted.png)|
-|USB C > 20 ซม.|[:musical_score: RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/RODE_SC17_C-C_USB20_100cm_inverted.png)|
-|USB C > 20 ซม.|[:musical_score: RKUULAA KL-X31](recorded_trim/KUULAA_KL-X31_C-C_USB20_300cm.wav)|[:floppy_disk: 100%](result_deltawave/KUULAA_KL-X31_C-C_USB20_300cm.txt)|[:mag: Spectrogram](visual_spectrogram/KUULAA_KL-X31_C-C_USB20_300cm_inverted.png)|
-|USB B|[:musical_score: NONAME BLUE](NONAME_BLUE_A-B_USB20_30cm.wav)|[:floppy_disk: 100%](result_deltawave/NONAME_BLUE_A-B_USB20_30cm.txt)|[:mag: Spectrogram](visual_spectrogram/NONAME_BLUE_A-B_USB20_30cm_inverted.png)|
-|USB B|[:musical_score: Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[:floppy_disk: 100%](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[:mag: Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
-|USB B|[:musical_score: NEO by OYAIDE d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
-|USB B|[:musical_score: UGREEN 80805](recorded_trim/UGREEN_80805_C-B_USB20_100cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_80805_C-B_USB20_100cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_80805_C-B_USB20_100cm_inverted.png)|
-|USB B|[:musical_score: UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[:floppy_disk: 100%](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
+|กลุ่ม<img width=70/>|ไฟล์เสียงที่ปรับ offset แล้ว|เทียบ Bit Perfect กับต้นฉบับ|กลับเฟส เสียงเงียบตลอดไฟล์|กราฟ Spectrogram กลับเฟส|
+|-|-|-|-|-|
+|USB C ≤ 20|[:musical_score: Shanling UA2 สายแถม](recorded_trim/Shanling_UA2_C-C_USB2.0_10cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/Shanling_UA2_C-C_USB2.0_10cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/Shanling_UA2_C-C_USB20_10cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/Shanling_UA2_C-C_USB2.0_10cm_inverted.png)|
+|USB C ≤ 20|[:musical_score: ddHifi TC05 1st Gen.](recorded_trim/ddHifi_TC05_C-C_USB20_15cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/ddHifi_TC05_C-C_USB20_15cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/ddHifi_TC05_C-C_USB20_15cm_inverted.txt)|[:mag: Spectrogram](musical_score/ddHifi_TC05_C-C_USB20_15cm_inverted.png)|
+|USB C ≤ 20|[:musical_score: FiiO LT-TC1](recorded_trim/FiiO_LT-TC01_C-C_USB20_15cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/FiiO_LT-TC01_C-C_USB20_15cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/FiiO_LT-TC01_C-C_USB20_15cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/FiiO_LT-TC01_C-C_USB20_15cm_inverted.png)|
+|USB C ≤ 20|[:musical_score: OE Audio OTG Digital Cable](recorded_trim/OEAudio_OTG_C-C_USB20_12cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/OEAudio_OTG_C-C_USB20_12cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/OEAudio_OTG_C-C_USB20_12cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/OEAudio_OTG_C-C_USB20_12cm_inverted.png)|
+|USB C ≤ 20|[:musical_score: AENZR FPC AZ1301](recorded_trim/AENZR_AZ1301_C-C_USB31_13cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/AENZR_AZ1301_C-C_USB31_13cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/AENZR_AZ1301_C-C_USB31_13cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/AENZR_AZ1301_C-C_USB31_13cm_inverted.png)|
+|USB C > 20|[:musical_score: UGREEN 50996](recorded_trim/UGREEN_50996_C-C_USB20_50cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/UGREEN_50996_C-C_USB20_50cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/UGREEN_50996_C-C_USB20_50cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_50996_C-C_USB20_50cm_inverted.png)|
+|USB C > 20|[:musical_score: ANKER A8485](recorded_trim/ANKER_A8485_C-C_USB31_90cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/ANKER_A8485_C-C_USB31_90cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/ANKER_A8485_C-C_USB31_90cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/ANKER_A8485_C-C_USB31_90cm_inverted.png)|
+|USB C > 20|[:musical_score: Verbatim 65684](recorded_trim/Verbatim_65684_C-C_USB32_100cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/Verbatim_65684_C-C_USB32_100cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/Verbatim_65684_C-C_USB32_100cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/Verbatim_65684_C-C_USB32_100cm_inverted.png)|
+|USB C > 20|[:musical_score: RØDE SC17](recorded_trim/RODE_SC17_C-C_USB20_100cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/RODE_SC17_C-C_USB20_100cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/RODE_SC17_C-C_USB20_100cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/RODE_SC17_C-C_USB20_100cm_inverted.png)|
+|USB C > 20|[:musical_score: KUULAA KL-X31](recorded_trim/KUULAA_KL-X31_C-C_USB20_300cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/KUULAA_KL-X31_C-C_USB20_300cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/KUULAA_KL-X31_C-C_USB20_300cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/KUULAA_KL-X31_C-C_USB20_300cm_inverted.png)|
+|USB B|[:musical_score: NONAME BLUE](NONAME_BLUE_A-B_USB20_30cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/NONAME_BLUE_A-B_USB20_30cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/NONAME_BLUE_A-B_USB20_30cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/NONAME_BLUE_A-B_USB20_30cm_inverted.png)|
+|USB B|[:musical_score: Audioquest Forest](recorded_trim/Audioquest_Forest_A-B_75cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/Audioquest_Forest_A-B_75cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/Audioquest_Forest_A-B_USB20_75cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/Audioquest_Forest_A-B_75cm_inverted.png)|
+|USB B|[:musical_score: NEO by OYAIDE d+ USB class B](recorded_trim/NEO_d%2B_A-B_USB20_100cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/NEO_d%2B_A-B_USB20_100cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/NEO_d%2B_A-B_USB20_100cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/NEO_d%2B_A-B_USB20_100cm_inverted.png)|
+|USB B|[:musical_score: UGREEN 80805](recorded_trim/UGREEN_80805_C-B_USB20_100cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/UGREEN_80805_C-B_USB20_100cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/UGREEN_80805_C-B_USB20_100cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_80805_C-B_USB20_100cm_inverted.png)|
+|USB B|[:musical_score: UGREEN 10350](recorded_trim/UGREEN_10350_A-B_USB20_150cm.wav)|[:heavy_check_mark: 100% Bit Perfect](result_deltawave/UGREEN_10350_A-B_USB20_150cm.txt)|[:heavy_check_mark: เสียงเงียบตลอดไฟล์](result_silence/UGREEN_10350_A-B_USB20_150cm_inverted.txt)|[:mag: Spectrogram](visual_spectrogram/UGREEN_10350_A-B_USB20_150cm_inverted.png)|
 
 ### สรุปผลการทดลอง
 
