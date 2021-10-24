@@ -74,6 +74,7 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 |[:computer: SoX](http://sox.sourceforge.net/)|[:floppy_disk: 14.4.2](https://sourceforge.net/projects/sox/files/sox/14.4.2/)|แปลงไฟล์เสียง, ตัดไฟล์เสียง, สร้างไฟล์รูปภาพ spectrogram|
 |[:computer: fmedia](https://stsaz.github.io/fmedia/)|[:floppy_disk: 1.24](https://github.com/stsaz/fmedia/releases/tag/v1.24)|เล่นเพลง, บันทึกเสียงเพลง|
 |[:computer: Pratt](https://www.fon.hum.uva.nl/praat/)|[:floppy_disk: 6.1.53](https://www.fon.hum.uva.nl/praat/download_win.html)|ตรวจหา offset ของไฟล์เสียง|
+|[:computer: Pratt script](http://www.janpijpers.com/find-the-offset-in-seconds-between-two-audio-files/)|[:floppy_disk: praatSyncWav.zip](http://www.janpijpers.com/find-the-offset-in-seconds-between-two-audio-files/)|script สำหรับตรวจหา offset ของไฟล์เสียง|
 |[:computer: FFmpeg](https://www.ffmpeg.org/)|[:floppy_disk: 4.4](https://www.gyan.dev/ffmpeg/builds/)|สร้างไฟล์รูปภาพ waveform|
 |[:computer: DeltaWave](https://deltaw.org/)|[:floppy_disk: 2.0.1](https://deltaw.org/)|ตรวจสอบความแตกต่างของไฟล์เสียง|
 
