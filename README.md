@@ -222,21 +222,16 @@ USB Digital Audio คือการส่งสัญญาณเพลงผ�
 
 #### การทดสอบความถูกต้องของวิธีการทดลองกับไฟล์ต้นฉบับเอง
 
-ทำการทดสอบความถูกต้องของวิธีการทดลองกับไฟล์ต้นฉบับเอง ผ่านการกลับเฟสเสียด้วยโปรแกรม sox โดยใช้คำสั่ง
+
+---
 
 > sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad.wav master_16_48_pad_inverted.wav
 
-จากนั้นลองกลับเฟสเทียบกับไฟล์ต้นฉบับ
+> sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad_eq_3000.wav master_16_48_pad_eq_3000_inverted.wav
 
-> sox -m -v 1 master_16_48_pad.wav -v -1 master_16_48_pad_eq_100.wav master_16_48_pad_eq_100_inverted.wav
+> sox master_16_48_pad_inverted.wav -n spectrogram -t master_16_48_pad_inverted.wav -o master_16_48_pad_inverted_spectrogram.png
 
-![sox_phase_invert_100](pictures/sox_phase_invert_100.png)
-
-เมื่อตรวจสอบไฟล์ที่กลับเฟสด้วยภาพ spectrogram จะพบว่าไฟล์ไม่ได้เงียบสนิท
-
-> sox master_16_48_pad_eq_100_inverted.wav -n spectrogram -t master_16_48_pad_eq_100_inverted.wav -o master_16_48_pad_eq_100_inverted.png
-
-![master_16_48_pad_eq_100_inverted](pictures/master_16_48_pad_eq_100_inverted.png)
+> sox master_16_48_pad_eq_3000_inverted.wav -n spectrogram -t master_16_48_pad_eq_3000_inverted.wav -o master_16_48_pad_eq_3000_inverted.png
 
 ### ผลการทดลองสาย USB ทั้ง 15 เส้น
 
